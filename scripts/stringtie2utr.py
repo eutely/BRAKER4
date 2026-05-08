@@ -262,7 +262,7 @@ def overlap(exon_start, exon_end, cds_start, cds_end):
     return exon_start <= cds_end and exon_end >= cds_start
 
 
-def merge_features(tsebra_gtf, stringtie_gtf, selected_transcripts):
+def merge_features(tsebra_gtf, stringtie_gtf, selected_transcripts, max_utr_extension=5000):
     for tsebra_tx, stringtie_tx in selected_transcripts.items():
         # Retrieve features for current transcripts
         tsebra_features = tsebra_gtf[tsebra_tx]
@@ -277,6 +277,24 @@ def merge_features(tsebra_gtf, stringtie_gtf, selected_transcripts):
         if tsebra_seqname:
             stringtie_exons = [e for e in stringtie_exons
                                if e.split('\t')[0] == tsebra_seqname]
+
+        # Clip StringTie exons so they cannot extend more than max_utr_extension bp
+        # beyond the BRAKER CDS boundaries.  Very long StringTie exons arise from
+        # polycistronic (plastid/mitochondrial) or read-through assemblies; without
+        # this cap they generate UTR annotations spanning tens of kilobases.
+        if tsebra_cds_features:
+            cds_min = min(int(f.split('\t')[3]) for f in tsebra_cds_features)
+            cds_max = max(int(f.split('\t')[4]) for f in tsebra_cds_features)
+            clipped = []
+            for e in stringtie_exons:
+                ef = e.split('\t')
+                new_start = max(int(ef[3]), cds_min - max_utr_extension)
+                new_end   = min(int(ef[4]), cds_max + max_utr_extension)
+                if new_start <= new_end:
+                    ef[3] = str(new_start)
+                    ef[4] = str(new_end)
+                    clipped.append('\t'.join(ef))
+            stringtie_exons = clipped
 
         # For single-exon BRAKER transcripts, only accept StringTie exons that overlap
         # the BRAKER exon. Single-exon genes are matched by position overlap, not by
@@ -345,6 +363,10 @@ def compute_utr_features(tsebra_gtf):
     - Skip UTR features where start > end
     - Collect StringTie exons to remove in a separate pass to avoid
       modifying the list while iterating (which skips elements)
+    - Guard the second-pass "StringTie source" check with featuretype=="exon" so
+      that UTR features computed in the first pass (which inherit the StringTie
+      source column) are not incorrectly removed or double-renamed
+      (github.com/Gaius-Augustus/BRAKER4/issues/29)
 
     Args:
     - tsebra_gtf (dict): Dictionary with transcript IDs as keys and lists of GTF feature lines as values.
@@ -419,7 +441,11 @@ def compute_utr_features(tsebra_gtf):
             else:
                 utr_type = "five_prime_UTR"
 
-            if "StringTie" in fields[1]:
+            # Only process original StringTie exon features here — UTR features
+            # created by the first pass above also carry "StringTie" in their
+            # source column (inherited from the exon), so we must guard on
+            # featuretype == "exon" to avoid incorrectly removing them.
+            if "StringTie" in fields[1] and featuretype == "exon":
                 # Check if it has the same start as any of its neighbors
                 same_start = False
                 for offset in [-1, 1]:
@@ -706,10 +732,14 @@ def main():
     parser.add_argument("-g", "--genes", required=True, help="File with gene gene models in GTF format, typically the output of Augustus, BRAKER, or TSEBRA.")
     parser.add_argument("-s", "--stringtie", required=True, help="File with StringTie transcript models in GFF format")
     parser.add_argument("-o", "--output", required=True, help="Output file name, file is in GTF format.")
+    parser.add_argument("--max-utr-extension", type=int, default=5000,
+                        help="Maximum bp a StringTie exon may extend beyond the BRAKER CDS boundary "
+                             "on either side.  Prevents polycistronic / read-through assemblies from "
+                             "inflating gene coordinates.  Default: 5000.  Set to 0 to disable.")
 
     args = parser.parse_args()
 
-    tsebra_file = args.genes 
+    tsebra_file = args.genes
     stringtie_file = args.stringtie
 
     # read the tsebra_file with gene models
@@ -745,7 +775,8 @@ def main():
 
     # merge features from stringtie_gtf into tsebra_gtf based on the selected transcripts, this is a simple concatenation,
     # UTR features are not inferred, yet
-    tsebra_gtf = merge_features(tsebra_none_gene_dict, stringtie_none_gene_dict, final_matching_tx)
+    tsebra_gtf = merge_features(tsebra_none_gene_dict, stringtie_none_gene_dict, final_matching_tx,
+                                max_utr_extension=args.max_utr_extension)
     # compute UTR features, remove StringTie exon features
     tsebra_gtf = compute_utr_features(tsebra_gtf)
 
