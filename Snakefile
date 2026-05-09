@@ -74,6 +74,8 @@ _env_overrides = {
     'BRAKER4_DOWNSAMPLING_SINGLE_EXON_SKIP_THRESHOLD':    ('PARAMS', 'downsampling_single_exon_skip_threshold'),
     'BRAKER4_AUGUSTUS_CHUNKSIZE':             ('PARAMS', 'augustus_chunksize'),
     'BRAKER4_AUGUSTUS_OVERLAP':               ('PARAMS', 'augustus_overlap'),
+    # SLURM_ARGS extras
+    'BRAKER4_SKIP_MEM_REQUEST':               ('SLURM_ARGS', 'skip_mem_request'),
     # FANTASIA-Lite (optional, GPU-only functional annotation)
     'BRAKER4_RUN_FANTASIA':                   ('fantasia', 'enable'),
     'BRAKER4_FANTASIA_SIF':                   ('fantasia', 'sif'),
@@ -119,11 +121,13 @@ for _img_key, _img_default in _container_defaults.items():
 # controls per-rule parallelism. Without this fallback, multithreaded rules
 # like run_augustus_hints would run single-threaded regardless of --cores.
 # See https://github.com/Gaius-Augustus/BRAKER4/issues/10.
+_skip_mem = config_parser.getboolean('SLURM_ARGS', 'skip_mem_request', fallback=False)
 config['slurm_args'] = {
     'cpus_per_task': config_parser.getint('SLURM_ARGS', 'cpus_per_task',
                                           fallback=workflow.cores or 1),
-    'mem_of_node': config_parser.getint('SLURM_ARGS', 'mem_of_node', fallback=16000),
-    'max_runtime': config_parser.getint('SLURM_ARGS', 'max_runtime', fallback=60)
+    'mem_of_node': 0 if _skip_mem else config_parser.getint('SLURM_ARGS', 'mem_of_node', fallback=16000),
+    'max_runtime': config_parser.getint('SLURM_ARGS', 'max_runtime', fallback=60),
+    'skip_mem': _skip_mem,
 }
 
 config['skip_optimize_augustus'] = config_parser.getboolean(

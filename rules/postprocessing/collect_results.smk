@@ -91,7 +91,7 @@ rule collect_results:
         mode=lambda w: get_braker_mode(w.sample)
     threads: 1
     resources:
-        mem_mb=4000,
+        mem_mb=0 if config['slurm_args'].get('skip_mem') else 4000,
         runtime=30
     container:
         BRAKER3_CONTAINER

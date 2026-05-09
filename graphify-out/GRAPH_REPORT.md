@@ -1,11 +1,11 @@
-# Graph Report - /home/katharina/git/BRAKER4  (2026-04-30)
+# Graph Report - /home/katharina/git/BRAKER4  (2026-05-08)
 
 ## Corpus Check
-- 19 files · ~722,975 words
+- 19 files · ~723,186 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 424 nodes · 605 edges · 47 communities detected
+- 432 nodes · 605 edges · 55 communities detected
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 42 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
@@ -57,6 +57,14 @@
 - [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Community 45|Community 45]]
 - [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BRAKER4 Test Scenarios README` - 19 edges
@@ -201,19 +209,19 @@ Nodes (1): Create a UTR feature line with explicit start/end coordinates.      A
 
 ### Community 26 - "Community 26"
 Cohesion: 1.0
-Nodes (1): Compute the UTR features for each transcript in tsebra_gtf based on strand infor
+Nodes (1): The list of features in gtf_dict has been expanded compared to the original vers
 
 ### Community 27 - "Community 27"
 Cohesion: 1.0
-Nodes (1): The list of features in gtf_dict has been expanded compared to the original vers
+Nodes (1): Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (
 
 ### Community 28 - "Community 28"
 Cohesion: 1.0
-Nodes (1): Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (
+Nodes (1): Build an interval tree from data. We will use that to quickly find the overlappi
 
 ### Community 29 - "Community 29"
 Cohesion: 1.0
-Nodes (1): Build an interval tree from data. We will use that to quickly find the overlappi
+Nodes (1): Contructs a dictionary that has sequence name as first key, then strand as secon
 
 ### Community 30 - "Community 30"
 Cohesion: 1.0
@@ -221,39 +229,39 @@ Nodes (1): Contructs a dictionary that has sequence name as first key, then stra
 
 ### Community 31 - "Community 31"
 Cohesion: 1.0
-Nodes (1): Contructs a dictionary that has sequence name as first key, then strand as secon
+Nodes (1): Find transcripts that overlap with genes.
 
 ### Community 32 - "Community 32"
 Cohesion: 1.0
-Nodes (1): Find transcripts that overlap with genes.
+Nodes (1): Extract introns directly from stringtie_tx_dict.
 
 ### Community 33 - "Community 33"
 Cohesion: 1.0
-Nodes (1): Extract introns directly from stringtie_tx_dict.
+Nodes (1): Check if the overlapping transcripts are compatible with the gene models.     In
 
 ### Community 34 - "Community 34"
 Cohesion: 1.0
-Nodes (1): Check if the overlapping transcripts are compatible with the gene models.     In
+Nodes (1): Create a UTR feature line with explicit start/end coordinates.      Avoids the s
 
 ### Community 35 - "Community 35"
 Cohesion: 1.0
-Nodes (1): Create a UTR feature line with explicit start/end coordinates.      Avoids the s
+Nodes (1): Compute the UTR features for each transcript in tsebra_gtf based on strand infor
 
 ### Community 36 - "Community 36"
 Cohesion: 1.0
-Nodes (1): Compute the UTR features for each transcript in tsebra_gtf based on strand infor
+Nodes (1): The list of features in gtf_dict has been expanded compared to the original vers
 
 ### Community 37 - "Community 37"
 Cohesion: 1.0
-Nodes (1): The list of features in gtf_dict has been expanded compared to the original vers
+Nodes (1): Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (
 
 ### Community 38 - "Community 38"
 Cohesion: 1.0
-Nodes (1): Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (
+Nodes (1): Build an interval tree from data. We will use that to quickly find the overlappi
 
 ### Community 39 - "Community 39"
 Cohesion: 1.0
-Nodes (1): Build an interval tree from data. We will use that to quickly find the overlappi
+Nodes (1): Contructs a dictionary that has sequence name as first key, then strand as secon
 
 ### Community 40 - "Community 40"
 Cohesion: 1.0
@@ -273,18 +281,50 @@ Nodes (1): Check if the overlapping transcripts are compatible with the gene mod
 
 ### Community 44 - "Community 44"
 Cohesion: 1.0
-Nodes (1): .gitignore (BRAKER4)
+Nodes (1): Create a UTR feature line with explicit start/end coordinates.      Avoids the s
 
 ### Community 45 - "Community 45"
 Cohesion: 1.0
-Nodes (1): MIT License (BRAKER4)
+Nodes (1): Compute the UTR features for each transcript in tsebra_gtf based on strand infor
 
 ### Community 46 - "Community 46"
+Cohesion: 1.0
+Nodes (1): The list of features in gtf_dict has been expanded compared to the original vers
+
+### Community 47 - "Community 47"
+Cohesion: 1.0
+Nodes (1): Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (
+
+### Community 48 - "Community 48"
+Cohesion: 1.0
+Nodes (1): Build an interval tree from data. We will use that to quickly find the overlappi
+
+### Community 49 - "Community 49"
+Cohesion: 1.0
+Nodes (1): Find transcripts that overlap with genes.
+
+### Community 50 - "Community 50"
+Cohesion: 1.0
+Nodes (1): Extract introns directly from stringtie_tx_dict.
+
+### Community 51 - "Community 51"
+Cohesion: 1.0
+Nodes (1): Check if the overlapping transcripts are compatible with the gene models.     In
+
+### Community 52 - "Community 52"
+Cohesion: 1.0
+Nodes (1): .gitignore (BRAKER4)
+
+### Community 53 - "Community 53"
+Cohesion: 1.0
+Nodes (1): MIT License (BRAKER4)
+
+### Community 54 - "Community 54"
 Cohesion: 1.0
 Nodes (1): samples.csv + config.ini input specification
 
 ## Knowledge Gaps
-- **150 isolated node(s):** `Parse BUSCO summary for genome and proteome scores.`, `Parse compleasm summary.txt.`, `Generate horizontal stacked bar chart.`, `Parse hintsfile.gff and return a set of (chrom, start, end, strand) for intron h`, `Parse a GTF and return per-transcript CDS intron chains.      Returns:         c` (+145 more)
+- **158 isolated node(s):** `Parse BUSCO summary for genome and proteome scores.`, `Parse compleasm summary.txt.`, `Generate horizontal stacked bar chart.`, `Parse hintsfile.gff and return a set of (chrom, start, end, strand) for intron h`, `Parse a GTF and return per-transcript CDS intron chains.      Returns:         c` (+153 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 22`** (2 nodes): `Translation table validation (codes 1, 6, 29 only)`, `Rationale: restrict translation_table to {1,6,29} because gmes_petap.pl rejects others`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -294,33 +334,33 @@ Nodes (1): samples.csv + config.ini input specification
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 25`** (1 nodes): `Create a UTR feature line with explicit start/end coordinates.      Avoids the s`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 26`** (1 nodes): `Compute the UTR features for each transcript in tsebra_gtf based on strand infor`
+- **Thin community `Community 26`** (1 nodes): `The list of features in gtf_dict has been expanded compared to the original vers`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 27`** (1 nodes): `The list of features in gtf_dict has been expanded compared to the original vers`
+- **Thin community `Community 27`** (1 nodes): `Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 28`** (1 nodes): `Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (`
+- **Thin community `Community 28`** (1 nodes): `Build an interval tree from data. We will use that to quickly find the overlappi`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 29`** (1 nodes): `Build an interval tree from data. We will use that to quickly find the overlappi`
+- **Thin community `Community 29`** (1 nodes): `Contructs a dictionary that has sequence name as first key, then strand as secon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 30`** (1 nodes): `Contructs a dictionary that has sequence name as first key, then strand as secon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (1 nodes): `Contructs a dictionary that has sequence name as first key, then strand as secon`
+- **Thin community `Community 31`** (1 nodes): `Find transcripts that overlap with genes.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 32`** (1 nodes): `Find transcripts that overlap with genes.`
+- **Thin community `Community 32`** (1 nodes): `Extract introns directly from stringtie_tx_dict.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 33`** (1 nodes): `Extract introns directly from stringtie_tx_dict.`
+- **Thin community `Community 33`** (1 nodes): `Check if the overlapping transcripts are compatible with the gene models.     In`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 34`** (1 nodes): `Check if the overlapping transcripts are compatible with the gene models.     In`
+- **Thin community `Community 34`** (1 nodes): `Create a UTR feature line with explicit start/end coordinates.      Avoids the s`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 35`** (1 nodes): `Create a UTR feature line with explicit start/end coordinates.      Avoids the s`
+- **Thin community `Community 35`** (1 nodes): `Compute the UTR features for each transcript in tsebra_gtf based on strand infor`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 36`** (1 nodes): `Compute the UTR features for each transcript in tsebra_gtf based on strand infor`
+- **Thin community `Community 36`** (1 nodes): `The list of features in gtf_dict has been expanded compared to the original vers`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 37`** (1 nodes): `The list of features in gtf_dict has been expanded compared to the original vers`
+- **Thin community `Community 37`** (1 nodes): `Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 38`** (1 nodes): `Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (`
+- **Thin community `Community 38`** (1 nodes): `Build an interval tree from data. We will use that to quickly find the overlappi`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 39`** (1 nodes): `Build an interval tree from data. We will use that to quickly find the overlappi`
+- **Thin community `Community 39`** (1 nodes): `Contructs a dictionary that has sequence name as first key, then strand as secon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 40`** (1 nodes): `Contructs a dictionary that has sequence name as first key, then strand as secon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -330,20 +370,36 @@ Nodes (1): samples.csv + config.ini input specification
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 43`** (1 nodes): `Check if the overlapping transcripts are compatible with the gene models.     In`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 44`** (1 nodes): `.gitignore (BRAKER4)`
+- **Thin community `Community 44`** (1 nodes): `Create a UTR feature line with explicit start/end coordinates.      Avoids the s`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 45`** (1 nodes): `MIT License (BRAKER4)`
+- **Thin community `Community 45`** (1 nodes): `Compute the UTR features for each transcript in tsebra_gtf based on strand infor`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 46`** (1 nodes): `samples.csv + config.ini input specification`
+- **Thin community `Community 46`** (1 nodes): `The list of features in gtf_dict has been expanded compared to the original vers`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 47`** (1 nodes): `Print GTF lines based on gene_dict and gtf_dict.          Args:     - filename (`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 48`** (1 nodes): `Build an interval tree from data. We will use that to quickly find the overlappi`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 49`** (1 nodes): `Find transcripts that overlap with genes.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 50`** (1 nodes): `Extract introns directly from stringtie_tx_dict.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 51`** (1 nodes): `Check if the overlapping transcripts are compatible with the gene models.     In`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 52`** (1 nodes): `.gitignore (BRAKER4)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 53`** (1 nodes): `MIT License (BRAKER4)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 54`** (1 nodes): `samples.csv + config.ini input specification`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `merge_features()` connect `Community 8` to `Community 2`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `Parse BUSCO summary for genome and proteome scores.`, `Parse compleasm summary.txt.`, `Generate horizontal stacked bar chart.` to the rest of the system?**
-  _150 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _158 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

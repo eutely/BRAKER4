@@ -42,6 +42,9 @@ fi
 
 cd "$SCENARIO_DIR"
 
+# Ensure singularity is available regardless of which login node we land on.
+export PATH=/opt/singularity-3.11.3/bin:${PATH}
+
 export SINGULARITYENV_PREPEND_PATH=/opt/conda/bin
 snakemake \
     --snakefile "$PIPELINE_DIR/Snakefile" \

@@ -113,3 +113,7 @@ cpus_per_task = 48
 mem_of_node = 120000
 ; Maximum walltime in minutes (default: 72 hours).
 max_runtime = 4320
+; Set to 1 to omit --mem from all sbatch submissions (for clusters that do
+; not enforce memory accounting). When 1, mem_mb is set to 0 for all rules,
+; which causes the snakemake-executor-plugin-slurm to skip the --mem flag.
+; skip_mem_request = 0

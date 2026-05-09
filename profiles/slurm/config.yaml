@@ -1,3 +1,9 @@
 executor: slurm
 use-singularity: true
 singularity-args: '--no-mount resolv-conf -B /home --env "PREPEND_PATH=/opt/conda/bin"'
+# Cluster-specific SLURM directives (uncomment and adjust as needed).
+# slurm_account and slurm_qos are recognized by snakemake-executor-plugin-slurm
+# and translate to #SBATCH --account / #SBATCH --qos in every submitted job.
+# default-resources:
+#   slurm_account: "your_account"
+#   slurm_qos: "standby"

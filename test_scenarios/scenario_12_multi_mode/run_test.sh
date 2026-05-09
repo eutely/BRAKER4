@@ -41,6 +41,9 @@ fi
 
 cd "$SCENARIO_DIR"
 
+# Ensure singularity is available regardless of which login node we land on.
+export PATH=/opt/singularity-3.11.3/bin:${PATH}
+
 export SINGULARITYENV_PREPEND_PATH=/opt/conda/bin
 snakemake \
     --snakefile "$PIPELINE_DIR/Snakefile" \
@@ -48,7 +51,7 @@ snakemake \
     $DRY_RUN_FLAG \
     --printshellcmds \
     --rerun-incomplete \
-    --latency-wait 120 \
+    --latency-wait 300 \
     --restart-times 3 \
     --use-singularity \
     --singularity-prefix "$PIPELINE_DIR/.singularity_cache" \
