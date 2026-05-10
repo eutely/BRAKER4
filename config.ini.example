@@ -104,6 +104,10 @@ enable = 0
 [OMARK]
 ; OMAmer database path (required when run_omark = 1 in [PARAMS]).
 ; omamer_db = /path/to/LUCA.h5
+; Directory containing taxdump.tar.gz for offline ete3 initialisation.
+; Required on HPC clusters where compute nodes have no internet access.
+; Auto-detected from shared_data/ete_taxa/ if not set.
+; ete_taxa_path = /path/to/shared_data/ete_taxa
 
 [SLURM_ARGS]
 ; These settings are used only when running with --executor slurm.

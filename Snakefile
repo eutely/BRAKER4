@@ -391,6 +391,18 @@ if config['run_ncrna']:
             + ", ".join(missing_rfam_files)
         )
 
+def _find_ete_taxa_path():
+    """Return directory holding taxdump.tar.gz for offline ete3 init, or ''."""
+    explicit = config_parser.get('OMARK', 'ete_taxa_path', fallback='')
+    if explicit:
+        return os.path.abspath(explicit)
+    candidate = os.path.join(_shared_data, 'ete_taxa')
+    if os.path.isdir(candidate):
+        return candidate
+    return ''
+
+config['ete_taxa_path'] = _find_ete_taxa_path()
+
 config['pipeline_version'] = __version__
 
 # ============================================================================
