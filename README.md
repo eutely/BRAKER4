@@ -346,6 +346,14 @@ A full BRAKER4 container cache is **roughly 10 GB** on disk if every optional fe
 
 Several tools that previously had their own biocontainer images — HISAT2, samtools, SRA toolkit, compleasm, miniprot, getAnnoFastaFromJoingenes, and the BAM-handling minimap2 calls used by IsoSeq BAM ingest — now run inside the main BRAKER container, which already ships them. There is no separate `hisat2`, `samtools`, `sra-tools`, or `compleasm` image to pull.
 
+**Singularity is the supported execution path; manual installs need care.** All BRAKER4 development and testing is done with Singularity/Apptainer using the images listed above. The repository does not ship conda environment files, and the Snakemake rules do not declare conda environments. If your cluster has no Singularity available and you have no option but to install the tools manually, you are responsible for the full transitive dependency tree of every container. A few known footguns:
+
+-   **barrnap** invokes `nhmmer` internally; the bioconda `barrnap` package does **not** pull in HMMER. A manual install must add `hmmer` explicitly (`conda install -c bioconda barrnap hmmer`). The biocontainer image bundles `nhmmer` at `/usr/local/bin/nhmmer`, so no extra step is needed when running through Singularity.
+-   **The main BRAKER stack** (GeneMark-ETP, AUGUSTUS, ProtHint, DIAMOND, TSEBRA, compleasm, HISAT2, samtools, SRA toolkit, minimap2, `getAnnoFastaFromJoingenes`) is bundled in a single image — replicating it from conda packages is non-trivial and not supported.
+-   **GeneMark** is license-restricted and is shipped pre-installed inside the BRAKER container. A manual install requires you to register for the GeneMark license and put `gmes_petap.pl` on `PATH` yourself.
+
+We welcome bug reports for the containerised path. For manual installs, please reproduce the issue with `--use-singularity` before filing.
+
 Version fragility warning
 -------------------------
 
@@ -364,6 +372,22 @@ We want to be transparent about version sensitivity. Snakemake, the SLURM execut
 ```
 --singularity-args "-B /home -B /scratch -B /data"
 ```
+
+**HPC scratch / `TMPDIR`:** Many SLURM clusters set `TMPDIR=/local/scratch/$USER` (or similar) per allocation, and several BRAKER4 rules — most notably `merge_hints`, which chains four `sort` calls over the merged hints file — spill intermediate data to `$TMPDIR` when the data exceeds memory. If that path is not user-writable, or is not bound into the Singularity container, the rule fails with a permission error on `/local/scratch/...`.
+
+To work around this, pick a writable directory and set it as the default `tmpdir` resource in your SLURM profile, and add the same path to `--singularity-args`:
+
+```yaml
+# profiles/slurm/config.yaml
+default-resources:
+  tmpdir: "/path/you/can/write"   # e.g. /scratch/$USER/tmp
+```
+
+```
+--singularity-args "-B /home -B /scratch -B /path/you/can/write"
+```
+
+The commented `default-resources` block in [profiles/slurm/config.yaml](profiles/slurm/config.yaml) shows the exact shape.
 
 **SLURM executor plugin versions:** The `snakemake-executor-plugin-slurm` package is developed independently of Snakemake itself. Breaking changes between plugin versions have occurred. If a Snakemake update breaks your SLURM runs, try pinning the plugin to the version that worked before.
 
@@ -1155,6 +1179,9 @@ output/{sample_name}/results/
 ├── braker.aa.gz                # Predicted protein sequences (FASTA, gzipped)
 ├── braker.codingseq.gz         # Predicted coding sequences (FASTA, gzipped)
 ├── braker_utr.gtf.gz           # UTR-decorated gene set (if RNA-Seq or IsoSeq was provided, gzipped)
+├── braker.longest.gtf.gz       # GTF restricted to the longest coding isoform per gene locus (gzipped)
+├── braker.longest.aa.gz        # Proteins re-extracted from braker.longest.gtf, useful for
+│                                 #   downstream functional annotation (gzipped)
 ├── genome.fa.gz                # Repeat-masked genome (only if pipeline ran masking, gzipped)
 ├── gene_support.tsv            # Per-gene extrinsic evidence support summary
 ├── hintsfile.gff.gz            # All extrinsic evidence hints (gzipped)

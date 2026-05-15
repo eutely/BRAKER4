@@ -123,7 +123,8 @@ rule collect_results:
         fi
 
         # --- Core gene predictions (copy first, gzip AFTER report generation) ---
-        for f in braker.gtf braker.gff3 braker_with_ncRNA.gff3 braker.aa braker.codingseq; do
+        for f in braker.gtf braker.gff3 braker_with_ncRNA.gff3 braker.aa braker.codingseq \
+                 braker.longest.gtf braker.longest.aa; do
             if [ -f "$OUTDIR/$f" ]; then
                 cp "$OUTDIR/$f" "$RESULTS/"
             fi
@@ -300,6 +301,7 @@ rule collect_results:
                  "$RESULTS"/braker.go.gff3 "$RESULTS"/braker_with_ncRNA.go.gff3 \
                  "$RESULTS"/fantasia_go_terms.tsv \
                  "$RESULTS"/braker.aa "$RESULTS"/braker.codingseq "$RESULTS"/braker_utr.gtf \
+                 "$RESULTS"/braker.longest.gtf "$RESULTS"/braker.longest.aa \
                  "$RESULTS"/hintsfile.gff "$RESULTS"/genome.fa \
                  "$RESULTS"/quality_control/fantasia/results.csv; do
             if [ -f "$f" ]; then
