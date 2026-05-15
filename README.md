@@ -83,7 +83,7 @@ Key differences:
 
 -   **Automatic repeat masking.** If you provide an unmasked genome, BRAKER4 runs RepeatModeler2 and RepeatMasker before gene prediction. Red (REpeat Detector) is available as a much faster alternative via `masking_tool = red`. You can also provide a pre-masked genome to skip this step entirely.
 
--   **Optional non-coding RNA prediction.** When `run_ncrna = 1` is set in `config.ini`, BRAKER4 predicts rRNAs with barrnap, tRNAs with tRNAscan-SE, non-coding RNA families with Infernal against Rfam, and (when transcript evidence is available) long non-coding RNAs with FEELnc. All four predictors' results are merged into a single `braker_with_ncRNA.gff3`. By default (`run_ncrna = 0`), no ncRNA prediction is performed and only the protein-coding gene set is produced.
+-   **Optional non-coding RNA prediction.** When `run_ncrna = 1` is set in `config.ini`, BRAKER4 predicts rRNAs with pybarrnap, tRNAs with tRNAscan-SE, non-coding RNA families with Infernal against Rfam, and (when transcript evidence is available) long non-coding RNAs with FEELnc. All four predictors' results are merged into a single `braker_with_ncRNA.gff3`. By default (`run_ncrna = 0`), no ncRNA prediction is performed and only the protein-coding gene set is produced.
 
 -   **Automated RNA-Seq sampling.** If you do not have RNA-Seq data at hand, BRAKER4 can use VARUS to automatically select and download suitable RNA-Seq libraries from NCBI's SRA for your species. Just provide the genus and species name in `samples.csv`.
 
@@ -335,7 +335,7 @@ Consult your HPC administrator if Singularity is not available. BRAKER4 will aut
 | OMArk | `quay.io/biocontainers/omark:0.4.1--pyh7e72e81_0` | 455 MB | OMArk + OMAmer (optional, only when `run_omark = 1`) |
 | VARUS | `katharinahoff/varus-notebook:v0.0.6` | 1.7 GB | VARUS auto-download of RNA-Seq from SRA (optional) |
 | minimap2 + minisplice | `katharinahoff/minimap-minisplice:v0.1` | ~200 MB | minimap2 ≥ 2.29 splice:hq for IsoSeq alignment, plus the minisplice CNN splice-site scorer (only when an IsoSeq FASTA/FASTQ is provided unaligned; minisplice is used only when `use_minisplice = 1`) |
-| barrnap | `quay.io/biocontainers/barrnap:0.9--hdfd78af_4` | 68 MB | rRNA prediction (only when `run_ncrna = 1`) |
+| pybarrnap | `quay.io/biocontainers/pybarrnap:0.5.1--pyhdfd78af_0` | 115 MB | rRNA prediction (only when `run_ncrna = 1`) |
 | tRNAscan-SE | `quay.io/biocontainers/trnascan-se:2.0.12--pl5321h031d066_0` | 32 MB | tRNA prediction (only when `run_ncrna = 1`) |
 | Infernal | `quay.io/biocontainers/infernal:1.1.5--pl5321h031d066_2` | 28 MB | Rfam scan for snoRNA/snRNA/miRNA (only when `run_ncrna = 1`) |
 | FEELnc | `quay.io/biocontainers/feelnc:0.2--pl526_0` | 323 MB | lncRNA prediction (only when `run_ncrna = 1` and transcript evidence is present) |
@@ -348,7 +348,6 @@ Several tools that previously had their own biocontainer images — HISAT2, samt
 
 **Singularity is the supported execution path; manual installs need care.** All BRAKER4 development and testing is done with Singularity/Apptainer using the images listed above. The repository does not ship conda environment files, and the Snakemake rules do not declare conda environments. If your cluster has no Singularity available and you have no option but to install the tools manually, you are responsible for the full transitive dependency tree of every container. A few known footguns:
 
--   **barrnap** invokes `nhmmer` internally; the bioconda `barrnap` package does **not** pull in HMMER. A manual install must add `hmmer` explicitly (`conda install -c bioconda barrnap hmmer`). The biocontainer image bundles `nhmmer` at `/usr/local/bin/nhmmer`, so no extra step is needed when running through Singularity.
 -   **The main BRAKER stack** (GeneMark-ETP, AUGUSTUS, ProtHint, DIAMOND, TSEBRA, compleasm, HISAT2, samtools, SRA toolkit, minimap2, `getAnnoFastaFromJoingenes`) is bundled in a single image — replicating it from conda packages is non-trivial and not supported.
 -   **GeneMark** is license-restricted and is shipped pre-installed inside the BRAKER container. A manual install requires you to register for the GeneMark license and put `gmes_petap.pl` on `PATH` yourself.
 
@@ -480,7 +479,7 @@ minisplice_image = docker://katharinahoff/minimap-minisplice:v0.1
 red_image = docker://quay.io/biocontainers/red:2018.09.10--h9948957_3
 gffcompare_image = docker://quay.io/biocontainers/gffcompare:0.12.6--h9f5acd7_1
 agat_image = docker://quay.io/biocontainers/agat:1.4.1--pl5321hdfd78af_0
-barrnap_image = docker://quay.io/biocontainers/barrnap:0.9--hdfd78af_4
+pybarrnap_image = docker://quay.io/biocontainers/pybarrnap:0.5.1--pyhdfd78af_0
 busco_image = docker://ezlabgva/busco:v6.0.0_cv1
 omark_image = docker://quay.io/biocontainers/omark:0.4.1--pyh7e72e81_0
 tetools_image = docker://dfam/tetools:latest
@@ -921,7 +920,7 @@ You will rarely need to change either value. Both apply to the iteration-1 and i
 
 Set to `1` to annotate non-coding RNAs in addition to protein-coding genes. Default is `0` (off). When enabled, the pipeline runs four ncRNA predictors in parallel:
 
--   **barrnap** (Seemann, 2018): ribosomal RNA gene prediction (18S, 28S, 5.8S, 5S; all modes)
+-   **pybarrnap** (Onishi, 2025): ribosomal RNA gene prediction (18S, 28S, 5.8S, 5S; all modes). Python re-implementation of barrnap using Rfam 14.10 HMM profiles via pyhmmer; resolves the eukaryotic 5.8S/28S overlap present in barrnap v0.9.
 -   **tRNAscan-SE** (Chan & Lowe, 2019): transfer RNA gene prediction (all modes)
 -   **Infernal/cmscan** (Nawrocki & Eddy, 2013): scans the genome against the Rfam database (Kalvari et al., 2021) to identify snoRNAs, snRNAs, miRNAs, ribozymes, and other structured ncRNAs (all modes)
 -   **FEELnc** (Wucher et al., 2017): long non-coding RNA identification from StringTie transcriptome assemblies (only when RNA-Seq evidence is available, i.e. ET, ETP, IsoSeq, or dual modes)

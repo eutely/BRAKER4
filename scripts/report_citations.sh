@@ -325,14 +325,14 @@ BIBEOF
 }
 BIBEOF
             ;;
-        barrnap)
-            echo "Seemann, T. (2018). barrnap: BAsic Rapid Ribosomal RNA Predictor. https://github.com/tseemann/barrnap" >> "$txt_file"
+        pybarrnap)
+            echo "Onishi, Y. (2025). pybarrnap: Python implementation of barrnap. https://github.com/moshi4/pybarrnap" >> "$txt_file"
             cat >> "$bib_file" << 'BIBEOF'
-@software{barrnap,
-  author  = {Seemann, Torsten},
-  title   = {barrnap: {BAsic} Rapid Ribosomal {RNA} Predictor},
-  year    = {2018},
-  url     = {https://github.com/tseemann/barrnap}
+@software{pybarrnap,
+  author  = {Onishi, Yuki},
+  title   = {pybarrnap: {P}ython implementation of barrnap},
+  year    = {2025},
+  url     = {https://github.com/moshi4/pybarrnap}
 }
 BIBEOF
             ;;

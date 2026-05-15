@@ -1,18 +1,23 @@
 """
-barrnap rRNA gene prediction and merging with BRAKER annotations.
+rRNA gene prediction (via pybarrnap) and merging with BRAKER annotations.
 
-Runs barrnap on the genome to predict ribosomal RNA genes (18S, 28S, 5.8S, 5S),
-then merges the rRNA features (along with tRNA, Infernal, and lncRNA results
-when also enabled) into the final GFF3 annotation.
+Runs pybarrnap on the genome to predict ribosomal RNA genes (18S, 28S,
+5.8S, 5S), then merges the rRNA features (along with tRNA, Infernal, and
+lncRNA results when also enabled) into the final GFF3 annotation.
+
+pybarrnap (https://github.com/moshi4/pybarrnap) is a Python re-implementation
+of Seemann's barrnap. It uses Rfam 14.10 HMM profiles via pyhmmer (no
+external nhmmer dependency) and resolves the eukaryotic 5.8S/28S overlap
+that barrnap v0.9 produces (tseemann/barrnap#47).
 
 Only included when run_ncrna = 1 in config.ini.
 
-Container: quay.io/biocontainers/barrnap:0.9--hdfd78af_4
+Container: quay.io/biocontainers/pybarrnap:0.5.1--pyhdfd78af_0
 """
 
 
 rule run_barrnap:
-    """Run barrnap to predict rRNA genes on the genome."""
+    """Run pybarrnap to predict rRNA genes on the genome."""
     input:
         genome=lambda wildcards: get_masked_genome(wildcards.sample)
     output:
@@ -32,17 +37,24 @@ rule run_barrnap:
         set -euo pipefail
         mkdir -p $(dirname {output.gff})
 
-        barrnap --kingdom euk --threads {threads} \
+        pybarrnap --kingdom euk --threads {threads} \
             {input.genome} > {output.gff}.tmp 2> {log} || true
 
         # Prefix rRNA gene IDs with sample name and add unique counter
         if [ -s {output.gff}.tmp ] && grep -qv '^#' {output.gff}.tmp; then
+            # POSIX-portable Name extraction: the biocontainer ships busybox
+            # awk, which does NOT support gawk's 3-arg match($str, regex, array).
+            # Use 2-arg match() with RSTART/RLENGTH + substr() to capture the
+            # old Name value instead.
             awk -F'\t' -v OFS='\t' -v p="{wildcards.sample}" '
                 BEGIN {{n=1}}
                 /^#/ {{print; next}}
                 {{
-                    match($9, /Name=([^;]+)/, a)
-                    oldname = a[1]
+                    oldname = ""
+                    if (match($9, /Name=[^;]+/)) {{
+                        # Skip the literal "Name=" prefix (5 chars).
+                        oldname = substr($9, RSTART + 5, RLENGTH - 5)
+                    }}
                     newname = p "-rRNA_" n "_" oldname
                     gsub(/Name=[^;]+/, "Name=" newname, $9)
                     if ($9 ~ /ID=/) {{
@@ -61,18 +73,17 @@ rule run_barrnap:
         rm -f {output.gff}.tmp
 
         n_rrna=$(grep -cv '^#' {output.gff} || echo 0)
-        echo "barrnap predicted $n_rrna rRNA features" >> {log}
+        echo "pybarrnap predicted $n_rrna rRNA features" >> {log}
 
         # Record software version (LC_ALL=C avoids locale warnings in biocontainer)
         VERSIONS_FILE=output/{wildcards.sample}/software_versions.tsv
-        # BusyBox grep in this container has no -P; use sed for portable extraction
-        BARRNAP_VER=$(LC_ALL=C barrnap --version 2>&1 | sed -n 's/.*\([0-9][0-9]*\.[0-9][0-9]*[^ ]*\).*/\1/p' | head -1 || true)
-        ( flock 9; printf "barrnap\t%s\n" "$BARRNAP_VER" >> "$VERSIONS_FILE" ) 9>"$VERSIONS_FILE.lock"
+        PYBARRNAP_VER=$(LC_ALL=C pybarrnap --version 2>&1 | sed -n 's/.*\([0-9][0-9]*\.[0-9][0-9]*[^ ]*\).*/\1/p' | head -1 || true)
+        ( flock 9; printf "pybarrnap\t%s\n" "$PYBARRNAP_VER" >> "$VERSIONS_FILE" ) 9>"$VERSIONS_FILE.lock"
 
         # Report
         REPORT_DIR=output/{wildcards.sample}
         source {script_dir}/report_citations.sh
-        cite barrnap "$REPORT_DIR" || true
+        cite pybarrnap "$REPORT_DIR" || true
         """
 
 

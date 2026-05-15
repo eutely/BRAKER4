@@ -107,7 +107,7 @@ _container_defaults = {
     'red_image':       'docker://quay.io/biocontainers/red:2018.09.10--h9948957_3',
     'gffcompare_image':'docker://quay.io/biocontainers/gffcompare:0.12.6--h9f5acd7_1',
     'agat_image':      'docker://quay.io/biocontainers/agat:1.4.1--pl5321hdfd78af_0',
-    'barrnap_image':   'docker://quay.io/biocontainers/barrnap:0.9--hdfd78af_4',
+    'pybarrnap_image': 'docker://quay.io/biocontainers/pybarrnap:0.5.1--pyhdfd78af_0',
     'busco_image':     'docker://ezlabgva/busco:v6.0.0_cv1',
     'omark_image':     'docker://quay.io/biocontainers/omark:0.4.1--pyh7e72e81_0',
     'tetools_image':   'docker://dfam/tetools:latest',
@@ -636,7 +636,7 @@ if GLOBAL_DATA_TYPES['needs_masking']:
         include: "rules/preprocessing/run_masking.smk"
 
 # Include ncRNA rules (optional). When run_ncrna=1 the pipeline annotates:
-#   - rRNA via barrnap (always part of run_ncrna)
+#   - rRNA via pybarrnap (always part of run_ncrna)
 #   - tRNA via tRNAscan-SE
 #   - snoRNA, snRNA, miRNA, ribozymes etc. via Infernal/cmscan against Rfam
 #   - lncRNA via FEELnc (only when transcript evidence is available)

@@ -3,7 +3,7 @@ Merge all ncRNA annotations into the final GFF3.
 
 When run_ncrna=1, this rule replaces merge_rrna_into_gff3 in the DAG.
 It merges protein-coding genes (braker.gff3) with:
-  - rRNA (barrnap, always present)
+  - rRNA (pybarrnap, always present)
   - tRNA (tRNAscan-SE)
   - ncRNA (Infernal/Rfam)
   - lncRNA (FEELnc, only when transcript evidence available)
@@ -116,7 +116,7 @@ rule merge_ncrna_into_gff3:
         }}
 
         # Append in priority order: rRNA > tRNA > Infernal > lncRNA
-        append_filtered "{input.rrna}" "rRNA (barrnap)"
+        append_filtered "{input.rrna}" "rRNA (pybarrnap)"
         append_filtered "{input.trna}" "tRNA (tRNAscan-SE)"
         append_filtered "{input.infernal}" "ncRNA (Infernal/Rfam)"
 
