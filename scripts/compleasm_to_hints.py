@@ -50,6 +50,8 @@ def run_simple_process(args_lst):
             print('Error in file ' + frameinfo.filename + ' at line ' +
                   str(frameinfo.lineno) + ': ' + "Return code of subprocess was " +
                   str(result.returncode) + str(result.args))
+            print('STDOUT:', result.stdout.decode('utf-8', errors='replace'))
+            print('STDERR:', result.stderr.decode('utf-8', errors='replace'))
             quit(1)
     except subprocess.CalledProcessError as grepexc:
         frameinfo = getframeinfo(currentframe())

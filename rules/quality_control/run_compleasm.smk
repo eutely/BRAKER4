@@ -101,6 +101,9 @@ rule run_compleasm:
 
         n_hints=$(wc -l < {output.compleasm_hints})
         echo "[INFO] Generated $n_hints BUSCO-based hints" >> {log}
+        if [ "$n_hints" -eq 0 ]; then
+            echo "[WARNING] 0 BUSCO hints produced. Check {output.compleasm_log} for the actual compleasm error output." >> {log}
+        fi
 
         # Record software versions
         VERSIONS_FILE=output/{wildcards.sample}/software_versions.tsv
