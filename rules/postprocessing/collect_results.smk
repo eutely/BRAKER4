@@ -117,9 +117,14 @@ rule collect_results:
         if [ -f "$OUTDIR/preprocessing/.headers_fixed" ] && grep -q "yes" "$OUTDIR/preprocessing/.headers_fixed" 2>/dev/null; then
             COPY_GENOME=true
         fi
-        if [ "$COPY_GENOME" = "true" ] && [ -f "$OUTDIR/genome.fa" ]; then
-            cp "$OUTDIR/genome.fa" "$RESULTS/"
-            echo "[INFO] Including cleaned genome in results"
+        if [ "$COPY_GENOME" = "true" ]; then
+            if [ -f "$OUTDIR/preprocessing/genome.fa.masked" ]; then
+                cp "$OUTDIR/preprocessing/genome.fa.masked" "$RESULTS/genome.fa"
+                echo "[INFO] Including masked genome in results"
+            elif [ -f "$OUTDIR/genome.fa" ]; then
+                cp "$OUTDIR/genome.fa" "$RESULTS/"
+                echo "[INFO] Including cleaned genome in results"
+            fi
         fi
 
         # --- Core gene predictions (copy first, gzip AFTER report generation) ---
