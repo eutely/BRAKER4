@@ -585,7 +585,7 @@ def generate_methods_text(workdir, mode):
     braker_gtf = os.path.join(d, "braker.gtf")
     if os.path.exists(braker_gtf):
         n_genes = sum(1 for l in open(braker_gtf) if "\tgene\t" in l)
-        n_tx = sum(1 for l in open(braker_gtf) if "\ttranscript\t" in l or "\tmRNA\t" in l)
+        n_tx = sum(1 for l in open(braker_gtf) if "\ttranscript\t" in l)
         parts.append(
             f"The final gene set contains **{n_genes:,} genes** and "
             f"**{n_tx:,} transcripts** after filtering for internal stop codons "

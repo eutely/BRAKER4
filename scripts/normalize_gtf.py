@@ -43,9 +43,14 @@ def parse_gtf(gtf_file):
 
             if feature == 'gene':
                 gene_lines[gene_id or fields[8].strip()] = fields
-            elif feature == 'transcript':
+            elif feature in ('transcript', 'mRNA'):
                 key = tx_id or fields[8].strip()
-                tx_lines[key] = fields
+                if key not in tx_lines:
+                    # Normalize mRNA feature type to transcript so braker.gtf
+                    # uses a single consistent feature type throughout.
+                    normalized = list(fields)
+                    normalized[2] = 'transcript'
+                    tx_lines[key] = normalized
                 if gene_id:
                     tx_to_gene[key] = gene_id
             elif tx_id and gene_id:
