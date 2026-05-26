@@ -14,6 +14,7 @@ rule prepare_genome:
         genome = lambda wildcards: samples_df[samples_df["sample_name"] == wildcards.sample].iloc[0]["genome"]
     output:
         genome = "output/{sample}/genome.fa",
+        genome_fai = "output/{sample}/genome.fa.fai",
         headers_fixed = "output/{sample}/preprocessing/.headers_fixed"
     benchmark:
         "benchmarks/{sample}/prepare_genome/prepare_genome.txt"
@@ -30,6 +31,7 @@ rule prepare_genome:
 
         # Clean FASTA headers: keep only first word (accession)
         sed 's/^\(>[^ ]*\) .*/\1/' {input.genome} > {output.genome}
+        samtools faidx {output.genome}
 
         # Check if headers were actually modified
         if diff -q <(grep '^>' {input.genome}) <(grep '^>' {output.genome}) > /dev/null 2>&1; then

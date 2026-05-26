@@ -71,6 +71,7 @@ def get_tsebra_inputs(wildcards):
         "hintsfile_sr":   augustus_gtf,
         "hintsfile_iso":  augustus_gtf,
         "keep_genes":     augustus_gtf,
+        "genome_fai":     f"output/{sample}/genome.fa.fai",
     }
 
     if mode == "dual":
@@ -137,6 +138,7 @@ rule run_tsebra_etp_per_run:
             f"output/{w.sample}/etp_hints.gff" if w.etp_run == "sr"
             else f"output/{w.sample}/etp_hints_isoseq.gff"
         ),
+        genome_fai="output/{sample}/genome.fa.fai",
     output:
         braker_per_run="output/{sample}/braker_etp_{etp_run}.tsebra.gtf",
         log_file="output/{sample}/braker_etp_{etp_run}.tsebra.log",
@@ -168,11 +170,21 @@ rule run_tsebra_etp_per_run:
         fi
         echo "[INFO] TSEBRA config: $TSEBRA_CFG" | tee -a {output.log_file}
 
+        GENOME_SIZE=$(awk '{{sum+=$2}}END{{print sum+0}}' {input.genome_fai})
+        FILTER_SE_ARG=""
+        if [ "$GENOME_SIZE" -gt 300000000 ]; then
+            FILTER_SE_ARG="--filter_single_exon_genes"
+            echo "[INFO] Large genome ($GENOME_SIZE bp): single-exon gene filter active" | tee -a {output.log_file}
+        else
+            echo "[INFO] Small genome ($GENOME_SIZE bp): single-exon gene filter inactive" | tee -a {output.log_file}
+        fi
+
         TSEBRA_TMP={output.braker_per_run}.tmp
         tsebra.py \
             --gtf {input.augustus_gtf},{input.genemark_gtf} \
             --keep_gtf {input.training_gtf} \
             --hintfiles {input.hintsfile} \
+            $FILTER_SE_ARG \
             --cfg $TSEBRA_CFG \
             --out $TSEBRA_TMP 2>&1 | tee -a {output.log_file}
 
@@ -223,6 +235,15 @@ rule run_tsebra:
         fi
         echo "[INFO] TSEBRA config: $TSEBRA_CFG" | tee -a {output.tsebra_log}
 
+        GENOME_SIZE=$(awk '{{sum+=$2}}END{{print sum+0}}' {input.genome_fai})
+        FILTER_SE_ARG=""
+        if [ "$GENOME_SIZE" -gt 300000000 ]; then
+            FILTER_SE_ARG="--filter_single_exon_genes"
+            echo "[INFO] Large genome ($GENOME_SIZE bp): single-exon gene filter active" | tee -a {output.tsebra_log}
+        else
+            echo "[INFO] Small genome ($GENOME_SIZE bp): single-exon gene filter inactive" | tee -a {output.tsebra_log}
+        fi
+
         TSEBRA_TMP={output.braker_merged_gtf}.tmp
 
         case "{params.mode}" in
@@ -239,6 +260,7 @@ rule run_tsebra:
                     --gtf {input.augustus_gtf},{input.genemark_gtf} \
                     --keep_gtf {input.training_gtf} \
                     --hintfiles {input.hintsfile} \
+                    $FILTER_SE_ARG \
                     --cfg $TSEBRA_CFG \
                     --out $TSEBRA_TMP 2>&1 | tee -a {output.tsebra_log}
                 ;;
@@ -283,6 +305,7 @@ rule run_tsebra:
                     --gtf {input.augustus_gtf},$GM_SR_PFX,$GM_ISO_PFX \
                     --keep_gtf $TR_SR_PFX,$TR_ISO_PFX \
                     --hintfiles {input.hintsfile_sr},{input.hintsfile_iso} \
+                    $FILTER_SE_ARG \
                     --cfg $TSEBRA_CFG \
                     --out $TSEBRA_TMP 2>&1 | tee -a {output.tsebra_log}
 
