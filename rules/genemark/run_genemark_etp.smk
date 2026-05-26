@@ -165,6 +165,23 @@ YAMLEOF
 
         if [ ! -f $OUTDIR_ABS/genemark.gtf ]; then
             echo "ERROR: GeneMark-ETP failed (exit=$ETP_EXIT), no genemark.gtf" >> {log}
+            TSEQ=$OUTDIR_ABS/rnaseq/stringtie/transcripts_merged.fasta
+            if [ -f "$TSEQ" ]; then
+                TSEQ_SIZE=$(wc -c < "$TSEQ")
+                echo "DIAGNOSTIC: transcripts_merged.fasta size: $TSEQ_SIZE bytes" >> {log}
+                if [ "$TSEQ_SIZE" -eq 0 ]; then
+                    echo "HINT: transcripts_merged.fasta is empty -- StringTie produced no transcripts from the RNA-Seq BAM. Check alignment quality and coverage." >> {log}
+                else
+                    echo "HINT: exit 139 = segfault in gmhmmp (internal GeneMark binary). This is a known issue when the transcript set is very large. Try subsampling the RNA-Seq BAM and rerunning." >> {log}
+                fi
+            else
+                echo "DIAGNOSTIC: transcripts_merged.fasta not found -- GeneMark-ETP likely crashed before StringTie completed." >> {log}
+            fi
+            GMS_LOG=$(find $OUTDIR_ABS -name "gms.log" | head -1)
+            if [ -n "$GMS_LOG" ]; then
+                echo "DIAGNOSTIC: last lines of gms.log ($GMS_LOG):" >> {log}
+                tail -10 "$GMS_LOG" >> {log}
+            fi
             exit 1
         fi
 

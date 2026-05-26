@@ -308,7 +308,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L1",
       "id": "home_katharina_git_braker4_scripts_generate_report_py",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate_report.py"
     },
     {
@@ -317,7 +317,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L33",
       "id": "generate_report_read_file",
-      "community": 3,
+      "community": 4,
       "norm_label": "read_file()"
     },
     {
@@ -326,7 +326,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L41",
       "id": "generate_report_embed_image",
-      "community": 3,
+      "community": 4,
       "norm_label": "embed_image()"
     },
     {
@@ -335,7 +335,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L71",
       "id": "generate_report_read_software_versions",
-      "community": 3,
+      "community": 4,
       "norm_label": "read_software_versions()"
     },
     {
@@ -344,7 +344,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L91",
       "id": "generate_report_parse_bbc_log",
-      "community": 3,
+      "community": 4,
       "norm_label": "parse_bbc_log()"
     },
     {
@@ -353,7 +353,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L167",
       "id": "generate_report_format_bbc_decisions",
-      "community": 3,
+      "community": 4,
       "norm_label": "format_bbc_decisions()"
     },
     {
@@ -362,7 +362,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L205",
       "id": "generate_report_generate_methods_text",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate_methods_text()"
     },
     {
@@ -371,7 +371,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L735",
       "id": "generate_report_deduplicate_citations",
-      "community": 3,
+      "community": 4,
       "norm_label": "deduplicate_citations()"
     },
     {
@@ -380,7 +380,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L747",
       "id": "generate_report_deduplicate_bibtex",
-      "community": 3,
+      "community": 4,
       "norm_label": "deduplicate_bibtex()"
     },
     {
@@ -389,7 +389,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L769",
       "id": "generate_report_format_compleasm_as_busco",
-      "community": 3,
+      "community": 4,
       "norm_label": "format_compleasm_as_busco()"
     },
     {
@@ -398,7 +398,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L812",
       "id": "generate_report_read_qc_summary",
-      "community": 3,
+      "community": 4,
       "norm_label": "read_qc_summary()"
     },
     {
@@ -407,7 +407,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L822",
       "id": "generate_report_collect_benchmarks",
-      "community": 3,
+      "community": 4,
       "norm_label": "collect_benchmarks()"
     },
     {
@@ -416,7 +416,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L879",
       "id": "generate_report_format_time",
-      "community": 3,
+      "community": 4,
       "norm_label": "format_time()"
     },
     {
@@ -425,7 +425,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L889",
       "id": "generate_report_generate_benchmark_plot",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate_benchmark_plot()"
     },
     {
@@ -434,7 +434,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L961",
       "id": "generate_report_detect_mode",
-      "community": 3,
+      "community": 4,
       "norm_label": "detect_mode()"
     },
     {
@@ -443,7 +443,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L1077",
       "id": "generate_report_generate_html",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate_html()"
     },
     {
@@ -452,7 +452,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/generate_report.py",
       "source_location": "L1407",
       "id": "generate_report_main",
-      "community": 3,
+      "community": 4,
       "norm_label": "main()"
     },
     {
@@ -460,7 +460,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L34",
-      "community": 3,
+      "community": 4,
       "norm_label": "read file contents, return empty string if not found.",
       "id": "generate_report_rationale_34"
     },
@@ -469,7 +469,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L42",
-      "community": 3,
+      "community": 4,
       "norm_label": "base64-encode an image for inline html embedding.      if download_name is provi",
       "id": "generate_report_rationale_42"
     },
@@ -478,7 +478,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L72",
-      "community": 3,
+      "community": 4,
       "norm_label": "read software_versions.tsv and return list of (tool, version) tuples.",
       "id": "generate_report_rationale_72"
     },
@@ -487,7 +487,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L92",
-      "community": 3,
+      "community": 4,
       "norm_label": "parse a best_by_compleasm aggregated log into per-pass decisions.      returns a",
       "id": "generate_report_rationale_92"
     },
@@ -496,7 +496,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L168",
-      "community": 3,
+      "community": 4,
       "norm_label": "render parsed best_by_compleasm passes as a methods-text sentence.",
       "id": "generate_report_rationale_168"
     },
@@ -505,7 +505,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L206",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate a single cohesive methods paragraph from pipeline outputs.      instead",
       "id": "generate_report_rationale_206"
     },
@@ -514,7 +514,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L736",
-      "community": 3,
+      "community": 4,
       "norm_label": "deduplicate plain-text citations (one per line).",
       "id": "generate_report_rationale_736"
     },
@@ -523,7 +523,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L748",
-      "community": 3,
+      "community": 4,
       "norm_label": "deduplicate bibtex entries by key.",
       "id": "generate_report_rationale_748"
     },
@@ -532,7 +532,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L770",
-      "community": 3,
+      "community": 4,
       "norm_label": "convert compleasm multi-line summary to busco-style one-liner.      input format",
       "id": "generate_report_rationale_770"
     },
@@ -541,7 +541,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L813",
-      "community": 3,
+      "community": 4,
       "norm_label": "read a qc summary file and return as html paragraph.",
       "id": "generate_report_rationale_813"
     },
@@ -550,7 +550,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L823",
-      "community": 3,
+      "community": 4,
       "norm_label": "collect snakemake benchmark files from benchmarks/{sample}/.      returns list o",
       "id": "generate_report_rationale_823"
     },
@@ -559,7 +559,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L880",
-      "community": 3,
+      "community": 4,
       "norm_label": "format seconds into human-readable string.",
       "id": "generate_report_rationale_880"
     },
@@ -568,7 +568,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L890",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate publication-quality resource consumption plots.      creates a two-pane",
       "id": "generate_report_rationale_890"
     },
@@ -577,7 +577,7 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L962",
-      "community": 3,
+      "community": 4,
       "norm_label": "detect braker mode from directory structure.      order matters: check specific",
       "id": "generate_report_rationale_962"
     },
@@ -586,152 +586,152 @@
       "file_type": "rationale",
       "source_file": "scripts/generate_report.py",
       "source_location": "L1078",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate the full html report.",
       "id": "generate_report_rationale_1078"
     },
     {
       "label": "best_by_compleasm.py",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L1",
-      "id": "scripts_best_by_compleasm_py",
-      "community": 4,
+      "id": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
+      "community": 0,
       "norm_label": "best_by_compleasm.py"
     },
     {
       "label": "load_score_cutoff()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L59",
       "id": "best_by_compleasm_load_score_cutoff",
-      "community": 4,
+      "community": 0,
       "norm_label": "load_score_cutoff()"
     },
     {
       "label": "load_length_cutoff()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L75",
       "id": "best_by_compleasm_load_length_cutoff",
-      "community": 4,
+      "community": 0,
       "norm_label": "load_length_cutoff()"
     },
     {
       "label": "parse_hmmsearch_output()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L101",
       "id": "best_by_compleasm_parse_hmmsearch_output",
-      "community": 4,
+      "community": 0,
       "norm_label": "parse_hmmsearch_output()"
     },
     {
       "label": "parse_compleasm()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L154",
       "id": "best_by_compleasm_parse_compleasm",
-      "community": 4,
+      "community": 0,
       "norm_label": "parse_compleasm()"
     },
     {
       "label": "find_input_files()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L181",
       "id": "best_by_compleasm_find_input_files",
-      "community": 4,
+      "community": 0,
       "norm_label": "find_input_files()"
     },
     {
       "label": "find_genemark_gtf()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L204",
       "id": "best_by_compleasm_find_genemark_gtf",
-      "community": 4,
+      "community": 0,
       "norm_label": "find_genemark_gtf()"
     },
     {
       "label": "run_compleasm()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L229",
       "id": "best_by_compleasm_run_compleasm",
-      "community": 4,
+      "community": 0,
       "norm_label": "run_compleasm()"
     },
     {
       "label": "run_getanno()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L289",
       "id": "best_by_compleasm_run_getanno",
-      "community": 4,
+      "community": 0,
       "norm_label": "run_getanno()"
     },
     {
       "label": "run_simple_process()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L305",
       "id": "best_by_compleasm_run_simple_process",
-      "community": 4,
+      "community": 0,
       "norm_label": "run_simple_process()"
     },
     {
       "label": "check_binary()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L340",
       "id": "best_by_compleasm_check_binary",
-      "community": 4,
+      "community": 0,
       "norm_label": "check_binary()"
     },
     {
       "label": "check_file()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L376",
       "id": "best_by_compleasm_check_file",
-      "community": 4,
+      "community": 0,
       "norm_label": "check_file()"
     },
     {
       "label": "determine_mode()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L393",
       "id": "best_by_compleasm_determine_mode",
-      "community": 4,
+      "community": 0,
       "norm_label": "determine_mode()"
     },
     {
       "label": "check_dir()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L417",
       "id": "best_by_compleasm_check_dir",
-      "community": 4,
+      "community": 0,
       "norm_label": "check_dir()"
     },
     {
       "label": "write_busco_keep_gtf()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L434",
       "id": "best_by_compleasm_write_busco_keep_gtf",
-      "community": 4,
+      "community": 0,
       "norm_label": "write_busco_keep_gtf()"
     },
     {
       "label": "main()",
       "file_type": "code",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L472",
       "id": "best_by_compleasm_main",
-      "community": 4,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -739,7 +739,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L155",
-      "community": 4,
+      "community": 0,
       "norm_label": "parse the compleasm statistics from the specified file.      args:         file",
       "id": "best_by_compleasm_rationale_155"
     },
@@ -748,7 +748,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L182",
-      "community": 4,
+      "community": 0,
       "norm_label": "find all the required input files for the process.      args:         args (argp",
       "id": "best_by_compleasm_rationale_182"
     },
@@ -757,7 +757,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L205",
-      "community": 4,
+      "community": 0,
       "norm_label": "find the genemark.gtf file and corresponding training.gtf file in the specified",
       "id": "best_by_compleasm_rationale_205"
     },
@@ -766,7 +766,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L230",
-      "community": 4,
+      "community": 0,
       "norm_label": "run compleasm on the specified protein files      args:         protein_files (l",
       "id": "best_by_compleasm_rationale_230"
     },
@@ -775,7 +775,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L290",
-      "community": 4,
+      "community": 0,
       "norm_label": "run the getannofastafromjoingenes.py tool to process the genemark gtf file and g",
       "id": "best_by_compleasm_rationale_290"
     },
@@ -784,7 +784,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L306",
-      "community": 4,
+      "community": 0,
       "norm_label": "execute a subprocess command with the provided arguments.      args:         arg",
       "id": "best_by_compleasm_rationale_306"
     },
@@ -793,7 +793,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L341",
-      "community": 4,
+      "community": 0,
       "norm_label": "check if the provided binary is executable or available in the system's path.",
       "id": "best_by_compleasm_rationale_341"
     },
@@ -802,7 +802,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L377",
-      "community": 4,
+      "community": 0,
       "norm_label": "check if the specified file exists.      args:         file (str): path to the f",
       "id": "best_by_compleasm_rationale_377"
     },
@@ -811,7 +811,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L394",
-      "community": 4,
+      "community": 0,
       "norm_label": "determine whether braker run, and whether the files are complete.      args:",
       "id": "best_by_compleasm_rationale_394"
     },
@@ -820,7 +820,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L418",
-      "community": 4,
+      "community": 0,
       "norm_label": "check if the specified directory exists.      returns:         str: path to the",
       "id": "best_by_compleasm_rationale_418"
     },
@@ -829,7 +829,7 @@
       "file_type": "rationale",
       "source_file": "scripts/best_by_compleasm.py",
       "source_location": "L435",
-      "community": 4,
+      "community": 0,
       "norm_label": "filters and writes gtf lines based on transcript ids.      this function reads a",
       "id": "best_by_compleasm_rationale_435"
     },
@@ -911,7 +911,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L1",
       "id": "home_katharina_git_braker4_scripts_stringtie2utr_py",
-      "community": 2,
+      "community": 3,
       "norm_label": "stringtie2utr.py"
     },
     {
@@ -920,7 +920,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L22",
       "id": "stringtie2utr_read_gtf",
-      "community": 2,
+      "community": 3,
       "norm_label": "read_gtf()"
     },
     {
@@ -929,7 +929,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L73",
       "id": "stringtie2utr_add_intron_features",
-      "community": 2,
+      "community": 3,
       "norm_label": "add_intron_features()"
     },
     {
@@ -938,7 +938,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L116",
       "id": "stringtie2utr_create_introns_hash",
-      "community": 2,
+      "community": 3,
       "norm_label": "create_introns_hash()"
     },
     {
@@ -947,7 +947,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L146",
       "id": "stringtie2utr_find_matching_transcripts",
-      "community": 2,
+      "community": 3,
       "norm_label": "find_matching_transcripts()"
     },
     {
@@ -956,7 +956,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L187",
       "id": "stringtie2utr_find_single_exon_genes",
-      "community": 2,
+      "community": 3,
       "norm_label": "find_single_exon_genes()"
     },
     {
@@ -965,7 +965,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L208",
       "id": "stringtie2utr_tx_len",
-      "community": 2,
+      "community": 3,
       "norm_label": "tx_len()"
     },
     {
@@ -974,7 +974,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L237",
       "id": "stringtie2utr_select_longest_tx",
-      "community": 2,
+      "community": 3,
       "norm_label": "select_longest_tx()"
     },
     {
@@ -983,7 +983,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L260",
       "id": "stringtie2utr_overlap",
-      "community": 2,
+      "community": 3,
       "norm_label": "overlap()"
     },
     {
@@ -1001,7 +1001,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L338",
       "id": "stringtie2utr_make_utr_feature",
-      "community": 2,
+      "community": 3,
       "norm_label": "_make_utr_feature()"
     },
     {
@@ -1010,7 +1010,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L356",
       "id": "stringtie2utr_compute_utr_features",
-      "community": 2,
+      "community": 3,
       "norm_label": "compute_utr_features()"
     },
     {
@@ -1019,7 +1019,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L471",
       "id": "stringtie2utr_fix_feature_coordinates",
-      "community": 2,
+      "community": 3,
       "norm_label": "fix_feature_coordinates()"
     },
     {
@@ -1028,7 +1028,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L535",
       "id": "stringtie2utr_print_gtf",
-      "community": 2,
+      "community": 3,
       "norm_label": "print_gtf()"
     },
     {
@@ -1037,7 +1037,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L582",
       "id": "stringtie2utr_build_tree",
-      "community": 2,
+      "community": 3,
       "norm_label": "build_tree()"
     },
     {
@@ -1046,7 +1046,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L590",
       "id": "stringtie2utr_construct_transcript_tree",
-      "community": 2,
+      "community": 3,
       "norm_label": "construct_transcript_tree()"
     },
     {
@@ -1055,7 +1055,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L619",
       "id": "stringtie2utr_construct_gene_tree",
-      "community": 2,
+      "community": 3,
       "norm_label": "construct_gene_tree()"
     },
     {
@@ -1064,7 +1064,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L652",
       "id": "stringtie2utr_find_overlapping_transcripts",
-      "community": 2,
+      "community": 3,
       "norm_label": "find_overlapping_transcripts()"
     },
     {
@@ -1073,7 +1073,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L671",
       "id": "stringtie2utr_extract_introns_from_dict",
-      "community": 2,
+      "community": 3,
       "norm_label": "extract_introns_from_dict()"
     },
     {
@@ -1082,7 +1082,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L680",
       "id": "stringtie2utr_check_overlap_compatibility",
-      "community": 2,
+      "community": 3,
       "norm_label": "check_overlap_compatibility()"
     },
     {
@@ -1091,7 +1091,7 @@
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L728",
       "id": "stringtie2utr_main",
-      "community": 2,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -1099,7 +1099,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L23",
-      "community": 2,
+      "community": 3,
       "norm_label": "reads a gtf file and extracts gene and non-gene features.      args:     - gtf_f",
       "id": "stringtie2utr_rationale_23"
     },
@@ -1108,7 +1108,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L74",
-      "community": 2,
+      "community": 3,
       "norm_label": "adds intron feature lines based on the exon feature lines.          args:     -",
       "id": "stringtie2utr_rationale_74"
     },
@@ -1117,7 +1117,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L117",
-      "community": 2,
+      "community": 3,
       "norm_label": "creates a dictionary with intron strings as keys and transcript ids as values.",
       "id": "stringtie2utr_rationale_117"
     },
@@ -1126,7 +1126,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L147",
-      "community": 2,
+      "community": 3,
       "norm_label": "find matching transcript ids based on intron patterns.     this only works for m",
       "id": "stringtie2utr_rationale_147"
     },
@@ -1135,7 +1135,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L188",
-      "community": 2,
+      "community": 3,
       "norm_label": "find single exon genes in non_gene_dict.          args:     - non_gene_dict (dic",
       "id": "stringtie2utr_rationale_188"
     },
@@ -1144,7 +1144,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L209",
-      "community": 2,
+      "community": 3,
       "norm_label": "calculate the length of each transcript.      args:     - non_gene_dict (dict):",
       "id": "stringtie2utr_rationale_209"
     },
@@ -1153,7 +1153,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L238",
-      "community": 2,
+      "community": 3,
       "norm_label": "for each key in matched_transcripts, select the longest transcript based on leng",
       "id": "stringtie2utr_rationale_238"
     },
@@ -1162,7 +1162,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L261",
-      "community": 2,
+      "community": 3,
       "norm_label": "check if exon overlaps with cds.",
       "id": "stringtie2utr_rationale_261"
     },
@@ -1171,7 +1171,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L339",
-      "community": 2,
+      "community": 3,
       "norm_label": "compute the utr features for each transcript in tsebra_gtf based on strand infor",
       "id": "stringtie2utr_rationale_339"
     },
@@ -1180,7 +1180,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L357",
-      "community": 2,
+      "community": 3,
       "norm_label": "compute the utr features for each transcript in tsebra_gtf based on strand infor",
       "id": "stringtie2utr_rationale_357"
     },
@@ -1189,7 +1189,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L472",
-      "community": 2,
+      "community": 3,
       "norm_label": "the list of features in gtf_dict has been expanded compared to the original vers",
       "id": "stringtie2utr_rationale_472"
     },
@@ -1198,7 +1198,7 @@
       "file_type": "rationale",
       "source_file": "scripts/stringtie2utr.py",
       "source_location": "L536",
-      "community": 2,
+      "community": 3,
       "norm_label": "contructs a dictionary that has sequence name as first key, then strand as secon",
       "id": "stringtie2utr_rationale_536"
     },
@@ -1207,7 +1207,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L583",
-      "community": 2,
+      "community": 3,
       "norm_label": "build an interval tree from data. we will use that to quickly find the overlappi",
       "id": "stringtie2utr_rationale_583"
     },
@@ -1216,7 +1216,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L591",
-      "community": 2,
+      "community": 3,
       "norm_label": "contructs a dictionary that has sequence name as first key, then strand as secon",
       "id": "stringtie2utr_rationale_591"
     },
@@ -1225,7 +1225,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L620",
-      "community": 2,
+      "community": 3,
       "norm_label": "contructs a dictionary that has sequence name as first key, then strand as secon",
       "id": "stringtie2utr_rationale_620"
     },
@@ -1234,7 +1234,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L653",
-      "community": 2,
+      "community": 3,
       "norm_label": "find transcripts that overlap with genes.",
       "id": "stringtie2utr_rationale_653"
     },
@@ -1243,7 +1243,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L672",
-      "community": 2,
+      "community": 3,
       "norm_label": "extract introns directly from stringtie_tx_dict.",
       "id": "stringtie2utr_rationale_672"
     },
@@ -1252,7 +1252,7 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/scripts/stringtie2utr.py",
       "source_location": "L681",
-      "community": 2,
+      "community": 3,
       "norm_label": "check if the overlapping transcripts are compatible with the gene models.     in",
       "id": "stringtie2utr_rationale_681"
     },
@@ -2301,6 +2301,240 @@
       "id": "fantasia_summary_rationale_335"
     },
     {
+      "label": "test_best_by_compleasm_cutoffs.py",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L1",
+      "id": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "community": 0,
+      "norm_label": "test_best_by_compleasm_cutoffs.py"
+    },
+    {
+      "label": "_import_module()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L42",
+      "id": "test_best_by_compleasm_cutoffs_import_module",
+      "community": 0,
+      "norm_label": "_import_module()"
+    },
+    {
+      "label": "TestLoadScoreCutoff",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L66",
+      "id": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "community": 0,
+      "norm_label": "testloadscorecutoff"
+    },
+    {
+      "label": ".test_odb12_key_strips_at_suffix()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L67",
+      "id": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
+      "community": 0,
+      "norm_label": ".test_odb12_key_strips_at_suffix()"
+    },
+    {
+      "label": ".test_odb12_value_is_float()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L75",
+      "id": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
+      "community": 0,
+      "norm_label": ".test_odb12_value_is_float()"
+    },
+    {
+      "label": ".test_multiple_entries()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L82",
+      "id": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
+      "community": 0,
+      "norm_label": ".test_multiple_entries()"
+    },
+    {
+      "label": ".test_entry_without_at_suffix()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L90",
+      "id": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
+      "community": 0,
+      "norm_label": ".test_entry_without_at_suffix()"
+    },
+    {
+      "label": ".test_missing_file_raises()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L99",
+      "id": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
+      "community": 0,
+      "norm_label": ".test_missing_file_raises()"
+    },
+    {
+      "label": "TestLoadLengthCutoff",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L109",
+      "id": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "community": 0,
+      "norm_label": "testloadlengthcutoff"
+    },
+    {
+      "label": ".test_odb12_three_column_no_index_error()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L110",
+      "id": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
+      "community": 0,
+      "norm_label": ".test_odb12_three_column_no_index_error()"
+    },
+    {
+      "label": ".test_sigma_zero_replaced_with_one()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L118",
+      "id": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
+      "community": 0,
+      "norm_label": ".test_sigma_zero_replaced_with_one()"
+    },
+    {
+      "label": ".test_nonzero_sigma_stored_correctly()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L126",
+      "id": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
+      "community": 0,
+      "norm_label": ".test_nonzero_sigma_stored_correctly()"
+    },
+    {
+      "label": ".test_multiple_entries()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L134",
+      "id": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
+      "community": 0,
+      "norm_label": ".test_multiple_entries()"
+    },
+    {
+      "label": ".test_missing_file_returns_empty_dict()",
+      "file_type": "code",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L144",
+      "id": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
+      "community": 0,
+      "norm_label": ".test_missing_file_returns_empty_dict()"
+    },
+    {
+      "label": "Unit tests for load_score_cutoff and load_length_cutoff in best_by_compleasm.py.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L1",
+      "id": "test_best_by_compleasm_cutoffs_rationale_1",
+      "community": 0,
+      "norm_label": "unit tests for load_score_cutoff and load_length_cutoff in best_by_compleasm.py."
+    },
+    {
+      "label": "Import best_by_compleasm under a controlled sys.argv.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L43",
+      "id": "test_best_by_compleasm_cutoffs_rationale_43",
+      "community": 0,
+      "norm_label": "import best_by_compleasm under a controlled sys.argv."
+    },
+    {
+      "label": "odb12 entry '71915at6073\\t190.0' must yield key '71915'.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L68",
+      "id": "test_best_by_compleasm_cutoffs_rationale_68",
+      "community": 0,
+      "norm_label": "odb12 entry '71915at6073\\t190.0' must yield key '71915'."
+    },
+    {
+      "label": "Score value must be stored as a float.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L76",
+      "id": "test_best_by_compleasm_cutoffs_rationale_76",
+      "community": 0,
+      "norm_label": "score value must be stored as a float."
+    },
+    {
+      "label": "All entries in a multi-line file must be present.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L83",
+      "id": "test_best_by_compleasm_cutoffs_rationale_83",
+      "community": 0,
+      "norm_label": "all entries in a multi-line file must be present."
+    },
+    {
+      "label": "An entry with no 'at' in the taxid must not raise and key is unchanged.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L91",
+      "id": "test_best_by_compleasm_cutoffs_rationale_91",
+      "community": 0,
+      "norm_label": "an entry with no 'at' in the taxid must not raise and key is unchanged."
+    },
+    {
+      "label": "A non-existent file must raise RuntimeError (not a bare IOError).",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L100",
+      "id": "test_best_by_compleasm_cutoffs_rationale_100",
+      "community": 0,
+      "norm_label": "a non-existent file must raise runtimeerror (not a bare ioerror)."
+    },
+    {
+      "label": "3-column odb12 format must parse without IndexError.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L111",
+      "id": "test_best_by_compleasm_cutoffs_rationale_111",
+      "community": 0,
+      "norm_label": "3-column odb12 format must parse without indexerror."
+    },
+    {
+      "label": "sigma == 0.0 in source must be stored as 1 (sentinel for 'no sigma').",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L119",
+      "id": "test_best_by_compleasm_cutoffs_rationale_119",
+      "community": 0,
+      "norm_label": "sigma == 0.0 in source must be stored as 1 (sentinel for 'no sigma')."
+    },
+    {
+      "label": "sigma != 0.0 must be stored as-is.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L127",
+      "id": "test_best_by_compleasm_cutoffs_rationale_127",
+      "community": 0,
+      "norm_label": "sigma != 0.0 must be stored as-is."
+    },
+    {
+      "label": "Multiple rows must all be loaded.",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L135",
+      "id": "test_best_by_compleasm_cutoffs_rationale_135",
+      "community": 0,
+      "norm_label": "multiple rows must all be loaded."
+    },
+    {
+      "label": "A missing lengths_cutoff file must return {} (odb12 lineages omit it).",
+      "file_type": "rationale",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L145",
+      "id": "test_best_by_compleasm_cutoffs_rationale_145",
+      "community": 0,
+      "norm_label": "a missing lengths_cutoff file must return {} (odb12 lineages omit it)."
+    },
+    {
       "label": "test_stringtie2utr_cross_scaffold.py",
       "file_type": "code",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_stringtie2utr_cross_scaffold.py",
@@ -2722,7 +2956,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "migrating_from_braker3.md",
       "id": "migrating_guide"
     },
@@ -2735,7 +2969,7 @@
       "captured_at": null,
       "author": "Henning Krall, Katharina J. Hoff",
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "readme.md (braker4)",
       "id": "readme_braker4"
     },
@@ -2748,7 +2982,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pipeline_overview.dot (graphviz dag)",
       "id": "pipeline_overview_dot"
     },
@@ -2761,7 +2995,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "requirements.txt (host python deps)",
       "id": "requirements_txt"
     },
@@ -2774,7 +3008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "samples.csv (multi-sample input)",
       "id": "samples_csv"
     },
@@ -2787,7 +3021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/readme.md",
       "id": "testdata_readme"
     },
@@ -2800,7 +3034,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/rnaseq.hints",
       "id": "testdata_rnaseq_hints"
     },
@@ -2813,7 +3047,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/genome.fa (a. thaliana chr5 fragment)",
       "id": "testdata_genome_fa"
     },
@@ -2826,7 +3060,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/isoseq.bam",
       "id": "testdata_isoseq_bam"
     },
@@ -2839,7 +3073,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/isoseq.fastq.gz",
       "id": "testdata_isoseq_fastq"
     },
@@ -2852,7 +3086,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/proteins.fa (orthodb subset)",
       "id": "testdata_proteins_fa"
     },
@@ -2865,7 +3099,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "test_data/reference.gtf",
       "id": "testdata_reference_gtf"
     },
@@ -2878,7 +3112,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "snakemake-based pipeline orchestration",
       "id": "concept_snakemake_workflow"
     },
@@ -2904,7 +3138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "singularity container management",
       "id": "concept_singularity_containers"
     },
@@ -2917,7 +3151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "genemark (es/et/ep+/etp modes)",
       "id": "concept_genemark"
     },
@@ -2930,7 +3164,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "augustus (training + hint-guided prediction)",
       "id": "concept_augustus"
     },
@@ -2943,7 +3177,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "tsebra gene-set merger",
       "id": "concept_tsebra"
     },
@@ -2956,7 +3190,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "et mode (rna-seq only / braker1 equivalent)",
       "id": "concept_et_mode"
     },
@@ -2969,7 +3203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ep mode (proteins only / braker2 equivalent)",
       "id": "concept_ep_mode"
     },
@@ -2982,7 +3216,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "etp mode (rna-seq + proteins / braker3 equivalent)",
       "id": "concept_etp_mode"
     },
@@ -2995,7 +3229,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "es mode (genome only / ab initio)",
       "id": "concept_es_mode"
     },
@@ -3008,7 +3242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "isoseq mode (pacbio long reads + proteins)",
       "id": "concept_isoseq_mode"
     },
@@ -3021,7 +3255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "dual mode (isoseq + short-read rna-seq + proteins)",
       "id": "concept_dual_mode"
     },
@@ -3034,7 +3268,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "repeat masking (repeatmodeler2+repeatmasker+trf or red)",
       "id": "concept_repeat_masking"
     },
@@ -3047,7 +3281,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ncrna annotation (barrnap, trnascan-se, infernal, feelnc)",
       "id": "concept_ncrna_annotation"
     },
@@ -3060,7 +3294,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "qc pipeline (busco, compleasm, omark, gffcompare)",
       "id": "concept_qc_pipeline"
     },
@@ -3073,7 +3307,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "fantasia-lite functional annotation (gpu, go terms)",
       "id": "concept_fantasia"
     },
@@ -3086,7 +3320,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "compleasm cdspart hints for augustus",
       "id": "concept_compleasm_hints"
     },
@@ -3099,7 +3333,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "best_by_compleasm busco-rescue in tsebra merge",
       "id": "concept_best_by_compleasm"
     },
@@ -3125,7 +3359,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "environment variable overrides (braker4_<key>)",
       "id": "concept_env_overrides"
     },
@@ -3138,7 +3372,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "minimap2 >= 2.29 for isoseq alignment",
       "id": "concept_minimap2"
     },
@@ -3151,7 +3385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "minisplice cnn splice-site scorer",
       "id": "concept_minisplice"
     },
@@ -3164,7 +3398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "snakemake slurm executor plugin",
       "id": "concept_slurm_executor"
     },
@@ -3177,7 +3411,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "orthodb protein database (partitioned v12)",
       "id": "concept_orthodb"
     },
@@ -3190,7 +3424,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "teambraker/braker3:v3.0.10 container image",
       "id": "concept_braker3_image"
     },
@@ -3203,7 +3437,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "varus automated rna-seq sra sampling",
       "id": "concept_varus"
     },
@@ -3216,7 +3450,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "utr annotation via stringtie2",
       "id": "concept_utr_annotation"
     },
@@ -3229,7 +3463,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "rationale: snakemake rewrite replaces monolithic braker.pl",
       "id": "rationale_snakemake_rewrite"
     },
@@ -3242,7 +3476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "rationale: compleasm always runs (no kill-switch) for best_by_compleasm rescue",
       "id": "rationale_compleasm_always_runs"
     },
@@ -3268,7 +3502,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "braker4 test scenarios readme",
       "id": "readme_test_scenarios"
     },
@@ -3281,7 +3515,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "hpc test scenarios (scenarios 08-11, o. tauri genome)",
       "id": "readme_hpc_scenarios"
     },
@@ -3294,7 +3528,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local test scenarios (scenarios 01-07, a. thaliana fragment)",
       "id": "readme_local_scenarios"
     },
@@ -3307,7 +3541,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "compute_profile.sh (cluster/compute knobs)",
       "id": "readme_compute_profile_sh"
     },
@@ -3320,7 +3554,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "config.ini (shared biology defaults)",
       "id": "readme_config_ini"
     },
@@ -3333,7 +3567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "run_test.sh (per-scenario launcher)",
       "id": "readme_run_test_sh"
     },
@@ -3346,7 +3580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "run_all_tests.sh (batch scenario launcher)",
       "id": "readme_run_all_tests_sh"
     },
@@ -3359,7 +3593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenario_overrides.sh (per-scenario config overrides)",
       "id": "readme_scenario_overrides_sh"
     },
@@ -3372,7 +3606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "braker4_config environment variable",
       "id": "readme_braker4_config_env"
     },
@@ -3385,7 +3619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "braker4_* environment variable overrides for config",
       "id": "readme_env_overrides"
     },
@@ -3398,7 +3632,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "braker.gtf output file",
       "id": "readme_output_braker_gtf"
     },
@@ -3411,7 +3645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "quality_control/ output directory (busco, compleasm, omark)",
       "id": "readme_output_quality_control"
     },
@@ -3424,7 +3658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "gene_support.tsv per-gene evidence support output",
       "id": "readme_output_gene_support"
     },
@@ -3437,7 +3671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "nohup-based scenario launcher for slurm resilience",
       "id": "readme_nohup_launcher"
     },
@@ -3450,7 +3684,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "rulegraph.png execution dag visualization per scenario",
       "id": "readme_rulegraph"
     },
@@ -3463,7 +3697,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "ostreococcus tauri genome (~12.6 mb, hpc test organism)",
       "id": "readme_ostreococcus_tauri_genome"
     },
@@ -3476,7 +3710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "arabidopsis thaliana chr5 fragment (~1 mb, local test organism)",
       "id": "readme_arabidopsis_thaliana_fragment"
     },
@@ -3489,7 +3723,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/genome.fa (a. thaliana chr5 fragment, 8 contigs)",
       "id": "readme_test_data_genome_fa"
     },
@@ -3502,7 +3736,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/proteins.fa (orthodb protein subset, 2.6 mb)",
       "id": "readme_test_data_proteins_fa"
     },
@@ -3515,7 +3749,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/isoseq.bam (pacbio isoseq reads aligned to genome)",
       "id": "readme_test_data_isoseq_bam"
     },
@@ -3528,7 +3762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/isoseq.fastq.gz (unaligned isoseq reads for minimap2)",
       "id": "readme_test_data_isoseq_fastq"
     },
@@ -3541,7 +3775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/reference.gtf (reference annotation for gffcompare)",
       "id": "readme_test_data_reference_gtf"
     },
@@ -3554,7 +3788,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/ostreococcus_tauri.fa (13 mb, o. tauri genome)",
       "id": "readme_test_data_otauri_fa"
     },
@@ -3567,7 +3801,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/viridiplantae.fa (odb12 proteins, 5.3 gb)",
       "id": "readme_test_data_viridiplantae_fa"
     },
@@ -3580,7 +3814,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/rnaseq.bam (a. thaliana rna-seq alignments, 164 mb)",
       "id": "readme_test_data_rnaseq_bam"
     },
@@ -3593,7 +3827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "test_data/luca.h5 (omamer database for omark, 8.8 gb)",
       "id": "readme_test_data_luca_h5"
     },
@@ -3606,7 +3840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "shared_data/rfam/ (rfam covariance models, 650 mb)",
       "id": "readme_shared_data_rfam"
     },
@@ -3619,7 +3853,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "es mode (ab initio, no evidence)",
       "id": "readme_mode_es"
     },
@@ -3632,7 +3866,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "ep mode (proteins only)",
       "id": "readme_mode_ep"
     },
@@ -3645,7 +3879,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "et mode (rna-seq only)",
       "id": "readme_mode_et"
     },
@@ -3658,7 +3892,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "etp mode (rna-seq + proteins)",
       "id": "readme_mode_etp"
     },
@@ -3671,7 +3905,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "isoseq mode",
       "id": "readme_mode_isoseq"
     },
@@ -3684,7 +3918,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "dual mode (short-read + isoseq + proteins)",
       "id": "readme_mode_dual"
     },
@@ -3762,7 +3996,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenario_08_es samples.csv (es mode, o. tauri, pre-masked)",
       "id": "scenario_08_es_samples"
     },
@@ -3775,7 +4009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenario_09_ep_masking samples.csv (ep mode, o. tauri, repeatmasker)",
       "id": "scenario_09_ep_masking_samples"
     },
@@ -3788,7 +4022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenario_10_et_varus samples.csv (et mode, varus, o. tauri)",
       "id": "scenario_10_et_varus_samples"
     },
@@ -3801,7 +4035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenario_11_etp_sra samples.csv (etp mode, sra+proteins, o. tauri)",
       "id": "scenario_11_etp_sra_samples"
     },
@@ -3814,7 +4048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenario_12_multi_mode samples.csv (all modes, a. thaliana)",
       "id": "scenario_12_multi_mode_samples"
     },
@@ -3827,7 +4061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_01_es samples.csv (es mode, a. thaliana)",
       "id": "local_scenario_01_es_samples"
     },
@@ -3840,7 +4074,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_02_ep samples.csv (ep mode, a. thaliana)",
       "id": "local_scenario_02_ep_samples"
     },
@@ -3853,7 +4087,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_03_et_fastq samples.csv (et mode, fastq, a. thaliana)",
       "id": "local_scenario_03_et_fastq_samples"
     },
@@ -3866,7 +4100,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_04_etp_bam samples.csv (etp mode, bam+proteins)",
       "id": "local_scenario_04_etp_bam_samples"
     },
@@ -3879,7 +4113,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_05_isoseq_bam samples.csv (isoseq bam multi-lib + proteins)",
       "id": "local_scenario_05_isoseq_bam_samples"
     },
@@ -3892,7 +4126,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_06_isoseq_fastq samples.csv (isoseq fastq + proteins)",
       "id": "local_scenario_06_isoseq_fastq_samples"
     },
@@ -3905,7 +4139,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_07_dual samples.csv (dual mode: bam + isoseq + proteins)",
       "id": "local_scenario_07_dual_samples"
     },
@@ -3918,7 +4152,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "local scenario_08_ep_redmask samples.csv (ep mode, unmasked genome)",
       "id": "local_scenario_08_ep_redmask_samples"
     },
@@ -4191,7 +4425,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "varus rna-seq download tool",
       "id": "varus_tool"
     },
@@ -4204,7 +4438,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "sra accession srr33123034 (o. tauri rna-seq)",
       "id": "sra_accession_srr33123034"
     },
@@ -4243,7 +4477,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "busco lineage eukaryota_odb12",
       "id": "busco_lineage_eukaryota_odb12"
     },
@@ -5529,187 +5763,187 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L59",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_load_score_cutoff",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_load_score_cutoff",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L75",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_load_length_cutoff",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_load_length_cutoff",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L101",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_parse_hmmsearch_output",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_parse_hmmsearch_output",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L154",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_parse_compleasm",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_parse_compleasm",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L181",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_find_input_files",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_find_input_files",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L204",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_find_genemark_gtf",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_find_genemark_gtf",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L229",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_run_compleasm",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_run_compleasm",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L289",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_run_getanno",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_run_getanno",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L305",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_run_simple_process",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_run_simple_process",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L340",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_check_binary",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_check_binary",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L376",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_check_file",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_check_file",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L393",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_determine_mode",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_determine_mode",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L417",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_check_dir",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_check_dir",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L434",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_write_busco_keep_gtf",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_write_busco_keep_gtf",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L472",
       "weight": 1.0,
-      "_src": "scripts_best_by_compleasm_py",
+      "_src": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "_tgt": "best_by_compleasm_main",
-      "source": "scripts_best_by_compleasm_py",
+      "source": "home_katharina_git_braker4_scripts_best_by_compleasm_py",
       "target": "best_by_compleasm_main",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L262",
       "weight": 1.0,
       "_src": "best_by_compleasm_run_compleasm",
@@ -5720,8 +5954,68 @@
     },
     {
       "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
+      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "source": "best_by_compleasm_load_score_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
+      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "source": "best_by_compleasm_load_score_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
+      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "source": "best_by_compleasm_load_score_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
+      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "source": "best_by_compleasm_load_score_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
+      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "source": "best_by_compleasm_load_score_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises"
+    },
+    {
+      "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L263",
       "weight": 1.0,
       "_src": "best_by_compleasm_run_compleasm",
@@ -5732,8 +6026,68 @@
     },
     {
       "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
+      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "source": "best_by_compleasm_load_length_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
+      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "source": "best_by_compleasm_load_length_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
+      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "source": "best_by_compleasm_load_length_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
+      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "source": "best_by_compleasm_load_length_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
+      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "source": "best_by_compleasm_load_length_cutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict"
+    },
+    {
+      "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L545",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5745,7 +6099,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L516",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5757,7 +6111,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L155",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_155",
@@ -5769,7 +6123,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L193",
       "weight": 1.0,
       "_src": "best_by_compleasm_find_input_files",
@@ -5781,7 +6135,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L482",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5793,7 +6147,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L182",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_182",
@@ -5805,7 +6159,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L224",
       "weight": 1.0,
       "_src": "best_by_compleasm_find_genemark_gtf",
@@ -5817,7 +6171,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L485",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5829,7 +6183,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L205",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_205",
@@ -5841,7 +6195,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L259",
       "weight": 1.0,
       "_src": "best_by_compleasm_run_compleasm",
@@ -5853,7 +6207,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L285",
       "weight": 1.0,
       "_src": "best_by_compleasm_run_compleasm",
@@ -5865,7 +6219,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L512",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5877,7 +6231,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L230",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_230",
@@ -5889,7 +6243,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L302",
       "weight": 1.0,
       "_src": "best_by_compleasm_run_getanno",
@@ -5901,7 +6255,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L303",
       "weight": 1.0,
       "_src": "best_by_compleasm_run_getanno",
@@ -5913,7 +6267,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L506",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5925,7 +6279,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L290",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_290",
@@ -5937,7 +6291,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L581",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5949,7 +6303,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L306",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_306",
@@ -5961,7 +6315,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L491",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5973,7 +6327,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L341",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_341",
@@ -5985,7 +6339,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L591",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -5997,7 +6351,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L377",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_377",
@@ -6009,7 +6363,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L488",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -6021,7 +6375,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L394",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_394",
@@ -6033,7 +6387,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L418",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_418",
@@ -6045,7 +6399,7 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L546",
       "weight": 1.0,
       "_src": "best_by_compleasm_main",
@@ -6057,7 +6411,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/best_by_compleasm.py",
+      "source_file": "/home/katharina/git/BRAKER4/scripts/best_by_compleasm.py",
       "source_location": "L435",
       "weight": 1.0,
       "_src": "best_by_compleasm_rationale_435",
@@ -8812,6 +9166,306 @@
       "_tgt": "fantasia_summary_write_categories_pie",
       "source": "fantasia_summary_write_categories_pie",
       "target": "fantasia_summary_rationale_335",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "_tgt": "test_best_by_compleasm_cutoffs_import_module",
+      "source": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "target": "test_best_by_compleasm_cutoffs_import_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_src": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "source": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_src": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "source": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_1",
+      "_tgt": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "source": "home_katharina_git_braker4_tests_test_best_by_compleasm_cutoffs_py",
+      "target": "test_best_by_compleasm_cutoffs_rationale_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_43",
+      "_tgt": "test_best_by_compleasm_cutoffs_import_module",
+      "source": "test_best_by_compleasm_cutoffs_import_module",
+      "target": "test_best_by_compleasm_cutoffs_rationale_43",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_68",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
+      "target": "test_best_by_compleasm_cutoffs_rationale_68",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_76",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
+      "target": "test_best_by_compleasm_cutoffs_rationale_76",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_83",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
+      "target": "test_best_by_compleasm_cutoffs_rationale_83",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_91",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
+      "target": "test_best_by_compleasm_cutoffs_rationale_91",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_100",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
+      "source": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
+      "target": "test_best_by_compleasm_cutoffs_rationale_100",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff",
+      "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_111",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
+      "target": "test_best_by_compleasm_cutoffs_rationale_111",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_119",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
+      "target": "test_best_by_compleasm_cutoffs_rationale_119",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_127",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
+      "target": "test_best_by_compleasm_cutoffs_rationale_127",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_135",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
+      "target": "test_best_by_compleasm_cutoffs_rationale_135",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_src": "test_best_by_compleasm_cutoffs_rationale_145",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
+      "source": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
+      "target": "test_best_by_compleasm_cutoffs_rationale_145",
       "confidence_score": 1.0
     },
     {

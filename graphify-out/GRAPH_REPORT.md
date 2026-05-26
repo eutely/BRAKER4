@@ -1,12 +1,12 @@
 # Graph Report - /home/katharina/git/BRAKER4  (2026-05-26)
 
 ## Corpus Check
-- 19 files · ~1,030,215 words
+- 20 files · ~1,030,720 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 432 nodes · 605 edges · 55 communities detected
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 42 edges (avg confidence: 0.82)
+- 458 nodes · 640 edges · 55 communities detected
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -104,24 +104,24 @@
 ## Communities
 
 ### Community 0 - "Community 0"
+Cohesion: 0.06
+Nodes (41): check_binary(), check_dir(), check_file(), determine_mode(), find_genemark_gtf(), find_input_files(), load_length_cutoff(), load_score_cutoff() (+33 more)
+
+### Community 1 - "Community 1"
 Cohesion: 0.07
 Nodes (49): BUSCO lineage eukaryota_odb12, local scenario_01_es samples.csv (ES mode, A. thaliana), local scenario_02_ep samples.csv (EP mode, A. thaliana), local scenario_03_et_fastq samples.csv (ET mode, FASTQ, A. thaliana), local scenario_04_etp_bam samples.csv (ETP mode, BAM+proteins), local scenario_05_isoseq_bam samples.csv (IsoSeq BAM multi-lib + proteins), local scenario_06_isoseq_fastq samples.csv (IsoSeq FASTQ + proteins), local scenario_07_dual samples.csv (Dual mode: BAM + IsoSeq + proteins) (+41 more)
 
-### Community 1 - "Community 1"
+### Community 2 - "Community 2"
 Cohesion: 0.08
 Nodes (38): AUGUSTUS (training + hint-guided prediction), best_by_compleasm BUSCO-rescue in TSEBRA merge, teambraker/braker3:v3.0.10 container image, compleasm CDSpart hints for AUGUSTUS, Dual mode (IsoSeq + short-read RNA-Seq + proteins), Environment variable overrides (BRAKER4_<KEY>), EP mode (proteins only / BRAKER2 equivalent), ES mode (genome only / ab initio) (+30 more)
 
-### Community 2 - "Community 2"
+### Community 3 - "Community 3"
 Cohesion: 0.08
 Nodes (37): add_intron_features(), build_tree(), check_overlap_compatibility(), compute_utr_features(), construct_gene_tree(), construct_transcript_tree(), create_introns_hash(), extract_introns_from_dict() (+29 more)
 
-### Community 3 - "Community 3"
+### Community 4 - "Community 4"
 Cohesion: 0.1
 Nodes (31): collect_benchmarks(), deduplicate_bibtex(), deduplicate_citations(), detect_mode(), embed_image(), format_bbc_decisions(), format_compleasm_as_busco(), format_time() (+23 more)
-
-### Community 4 - "Community 4"
-Cohesion: 0.13
-Nodes (26): check_binary(), check_dir(), check_file(), determine_mode(), find_genemark_gtf(), find_input_files(), load_length_cutoff(), load_score_cutoff() (+18 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.13
@@ -324,7 +324,7 @@ Cohesion: 1.0
 Nodes (1): samples.csv + config.ini input specification
 
 ## Knowledge Gaps
-- **158 isolated node(s):** `Parse BUSCO summary for genome and proteome scores.`, `Parse compleasm summary.txt.`, `Generate horizontal stacked bar chart.`, `Parse hintsfile.gff and return a set of (chrom, start, end, strand) for intron h`, `Parse a GTF and return per-transcript CDS intron chains.      Returns:         c` (+153 more)
+- **170 isolated node(s):** `Parse BUSCO summary for genome and proteome scores.`, `Parse compleasm summary.txt.`, `Generate horizontal stacked bar chart.`, `Parse hintsfile.gff and return a set of (chrom, start, end, strand) for intron h`, `Parse a GTF and return per-transcript CDS intron chains.      Returns:         c` (+165 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 22`** (2 nodes): `Translation table validation (codes 1, 6, 29 only)`, `Rationale: restrict translation_table to {1,6,29} because gmes_petap.pl rejects others`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -396,17 +396,17 @@ Nodes (1): samples.csv + config.ini input specification
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `merge_features()` connect `Community 8` to `Community 2`?**
+- **Why does `merge_features()` connect `Community 8` to `Community 3`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `Parse BUSCO summary for genome and proteome scores.`, `Parse compleasm summary.txt.`, `Generate horizontal stacked bar chart.` to the rest of the system?**
-  _158 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _170 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
