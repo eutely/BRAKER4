@@ -2431,108 +2431,108 @@
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L1",
-      "id": "test_best_by_compleasm_cutoffs_rationale_1",
       "community": 0,
-      "norm_label": "unit tests for load_score_cutoff and load_length_cutoff in best_by_compleasm.py."
+      "norm_label": "unit tests for load_score_cutoff and load_length_cutoff in best_by_compleasm.py.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_1"
     },
     {
       "label": "Import best_by_compleasm under a controlled sys.argv.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L43",
-      "id": "test_best_by_compleasm_cutoffs_rationale_43",
       "community": 0,
-      "norm_label": "import best_by_compleasm under a controlled sys.argv."
+      "norm_label": "import best_by_compleasm under a controlled sys.argv.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_43"
     },
     {
       "label": "odb12 entry '71915at6073\\t190.0' must yield key '71915'.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L68",
-      "id": "test_best_by_compleasm_cutoffs_rationale_68",
       "community": 0,
-      "norm_label": "odb12 entry '71915at6073\\t190.0' must yield key '71915'."
+      "norm_label": "odb12 entry '71915at6073\\t190.0' must yield key '71915'.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_68"
     },
     {
       "label": "Score value must be stored as a float.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L76",
-      "id": "test_best_by_compleasm_cutoffs_rationale_76",
       "community": 0,
-      "norm_label": "score value must be stored as a float."
+      "norm_label": "score value must be stored as a float.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_76"
     },
     {
       "label": "All entries in a multi-line file must be present.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L83",
-      "id": "test_best_by_compleasm_cutoffs_rationale_83",
       "community": 0,
-      "norm_label": "all entries in a multi-line file must be present."
+      "norm_label": "all entries in a multi-line file must be present.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_83"
     },
     {
       "label": "An entry with no 'at' in the taxid must not raise and key is unchanged.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L91",
-      "id": "test_best_by_compleasm_cutoffs_rationale_91",
       "community": 0,
-      "norm_label": "an entry with no 'at' in the taxid must not raise and key is unchanged."
+      "norm_label": "an entry with no 'at' in the taxid must not raise and key is unchanged.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_91"
     },
     {
       "label": "A non-existent file must raise RuntimeError (not a bare IOError).",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L100",
-      "id": "test_best_by_compleasm_cutoffs_rationale_100",
       "community": 0,
-      "norm_label": "a non-existent file must raise runtimeerror (not a bare ioerror)."
+      "norm_label": "a non-existent file must raise runtimeerror (not a bare ioerror).",
+      "id": "test_best_by_compleasm_cutoffs_rationale_100"
     },
     {
       "label": "3-column odb12 format must parse without IndexError.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L111",
-      "id": "test_best_by_compleasm_cutoffs_rationale_111",
       "community": 0,
-      "norm_label": "3-column odb12 format must parse without indexerror."
+      "norm_label": "3-column odb12 format must parse without indexerror.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_111"
     },
     {
       "label": "sigma == 0.0 in source must be stored as 1 (sentinel for 'no sigma').",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L119",
-      "id": "test_best_by_compleasm_cutoffs_rationale_119",
       "community": 0,
-      "norm_label": "sigma == 0.0 in source must be stored as 1 (sentinel for 'no sigma')."
+      "norm_label": "sigma == 0.0 in source must be stored as 1 (sentinel for 'no sigma').",
+      "id": "test_best_by_compleasm_cutoffs_rationale_119"
     },
     {
       "label": "sigma != 0.0 must be stored as-is.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L127",
-      "id": "test_best_by_compleasm_cutoffs_rationale_127",
       "community": 0,
-      "norm_label": "sigma != 0.0 must be stored as-is."
+      "norm_label": "sigma != 0.0 must be stored as-is.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_127"
     },
     {
       "label": "Multiple rows must all be loaded.",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L135",
-      "id": "test_best_by_compleasm_cutoffs_rationale_135",
       "community": 0,
-      "norm_label": "multiple rows must all be loaded."
+      "norm_label": "multiple rows must all be loaded.",
+      "id": "test_best_by_compleasm_cutoffs_rationale_135"
     },
     {
       "label": "A missing lengths_cutoff file must return {} (odb12 lineages omit it).",
       "file_type": "rationale",
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L145",
-      "id": "test_best_by_compleasm_cutoffs_rationale_145",
       "community": 0,
-      "norm_label": "a missing lengths_cutoff file must return {} (odb12 lineages omit it)."
+      "norm_label": "a missing lengths_cutoff file must return {} (odb12 lineages omit it).",
+      "id": "test_best_by_compleasm_cutoffs_rationale_145"
     },
     {
       "label": "test_stringtie2utr_cross_scaffold.py",
@@ -5959,8 +5959,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L71",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
-      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "_src": "best_by_compleasm_load_score_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix",
       "source": "best_by_compleasm_load_score_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_key_strips_at_suffix"
     },
@@ -5971,8 +5971,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L79",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
-      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "_src": "best_by_compleasm_load_score_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float",
       "source": "best_by_compleasm_load_score_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_odb12_value_is_float"
     },
@@ -5983,8 +5983,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L86",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
-      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "_src": "best_by_compleasm_load_score_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries",
       "source": "best_by_compleasm_load_score_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_multiple_entries"
     },
@@ -5995,8 +5995,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L94",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
-      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "_src": "best_by_compleasm_load_score_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix",
       "source": "best_by_compleasm_load_score_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_entry_without_at_suffix"
     },
@@ -6007,8 +6007,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L102",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
-      "_tgt": "best_by_compleasm_load_score_cutoff",
+      "_src": "best_by_compleasm_load_score_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises",
       "source": "best_by_compleasm_load_score_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadscorecutoff_test_missing_file_raises"
     },
@@ -6031,8 +6031,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L115",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
-      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "_src": "best_by_compleasm_load_length_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error",
       "source": "best_by_compleasm_load_length_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_odb12_three_column_no_index_error"
     },
@@ -6043,8 +6043,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L122",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
-      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "_src": "best_by_compleasm_load_length_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one",
       "source": "best_by_compleasm_load_length_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_sigma_zero_replaced_with_one"
     },
@@ -6055,8 +6055,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L130",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
-      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "_src": "best_by_compleasm_load_length_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly",
       "source": "best_by_compleasm_load_length_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_nonzero_sigma_stored_correctly"
     },
@@ -6067,8 +6067,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L139",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
-      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "_src": "best_by_compleasm_load_length_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries",
       "source": "best_by_compleasm_load_length_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_multiple_entries"
     },
@@ -6079,8 +6079,8 @@
       "source_file": "/home/katharina/git/BRAKER4/tests/test_best_by_compleasm_cutoffs.py",
       "source_location": "L146",
       "weight": 1.0,
-      "_src": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
-      "_tgt": "best_by_compleasm_load_length_cutoff",
+      "_src": "best_by_compleasm_load_length_cutoff",
+      "_tgt": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict",
       "source": "best_by_compleasm_load_length_cutoff",
       "target": "test_best_by_compleasm_cutoffs_testloadlengthcutoff_test_missing_file_returns_empty_dict"
     },
