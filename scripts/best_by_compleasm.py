@@ -63,7 +63,7 @@ def load_score_cutoff(scores_cutoff_file): # changed arguments
             for line in f:
                 line = line.strip().split()
                 try:
-                    taxid = line[0]
+                    taxid = line[0].split("at")[0]
                     score = float(line[1])
                     cutoff_dict[taxid] = score
                 except IndexError:
@@ -86,7 +86,7 @@ def load_length_cutoff(lengths_cutoff_file): # changed arguments
                 try:
                     taxid = line[0]
                     sigma = float(line[2])
-                    length = float(line[3])
+                    length = float(line[1])
                     if sigma == 0.0:
                         sigma = 1
                     cutoff_dict[taxid] = {}
